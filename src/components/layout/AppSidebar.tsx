@@ -52,7 +52,7 @@ export function AppSidebar() {
         <Link href="/">
           <Button 
             size="icon" 
-            className="w-7 h-7 rounded-full bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20 transition-all duration-300"
+            className="w-7 h-7 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/25 transition-all duration-300"
           >
             <Home className="w-3.5 h-3.5" />
           </Button>
@@ -69,7 +69,7 @@ export function AppSidebar() {
                 className="w-6 h-6 flex items-center justify-center p-0 rounded-lg hover:bg-sidebar-accent transition-colors"
               >
                 <Link href={item.url}>
-                  <item.icon className="w-3.5 h-3.5 text-sidebar-foreground group-hover:text-sidebar-accent-foreground" />
+                  <item.icon className="w-3.5 h-3.5 text-sidebar-foreground group-hover:text-primary transition-colors" />
                 </Link>
               </SidebarMenuButton>
             </SidebarMenuItem>
@@ -78,7 +78,7 @@ export function AppSidebar() {
       </SidebarContent>
       
       <SidebarFooter className="flex flex-col items-center gap-3 pb-5">
-        <Button variant="ghost" size="icon" className="w-6 h-6 p-0 overflow-hidden rounded-full hover:bg-sidebar-accent">
+        <Button variant="ghost" size="icon" className="w-6 h-6 p-0 overflow-hidden rounded-full hover:bg-sidebar-accent grayscale hover:grayscale-0 transition-all">
           <span className="text-[10px]">🇺🇸</span>
         </Button>
         
