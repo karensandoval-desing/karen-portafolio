@@ -52,7 +52,7 @@
     --sidebar-accent-foreground: 40 20% 98%;
     --sidebar-border: 285 31% 20%;
     --sidebar-ring: 282 41% 63%;
-    --sidebar-width: 60px;
+    --sidebar-width: 45px;
   }
 
   .dark {
@@ -73,7 +73,6 @@
     
     --secondary: 285 20% 15%;
     --secondary-foreground: 40 20% 98%;
-    
     --muted: 285 20% 18%;
     --muted-foreground: 40 10% 70%;
     

@@ -55,32 +55,32 @@ export function AppSidebar() {
   return (
     <Sidebar collapsible="none" className="w-[var(--sidebar-width)] border-r border-sidebar-border bg-sidebar overflow-hidden transition-all duration-300">
       <TooltipProvider delayDuration={0}>
-        <SidebarHeader className="flex items-center justify-center pt-8 pb-10">
+        <SidebarHeader className="flex items-center justify-center pt-6 pb-8">
           <Link href="/">
             <div className="relative group">
-              <div className="absolute -inset-2 bg-primary/30 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute -inset-1 bg-primary/30 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity" />
               <Button 
                 size="icon" 
-                className="w-10 h-10 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-xl shadow-primary/20 relative z-10"
+                className="w-8 h-8 rounded-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-xl shadow-primary/20 relative z-10"
               >
-                <Home className="w-5 h-5" />
+                <Home className="w-4 h-4" />
               </Button>
             </div>
           </Link>
         </SidebarHeader>
         
-        <SidebarContent className="flex flex-col items-center px-0 gap-6">
-          <SidebarMenu className="w-full flex flex-col items-center gap-4">
+        <SidebarContent className="flex flex-col items-center px-0 gap-4">
+          <SidebarMenu className="w-full flex flex-col items-center gap-3">
             {navItems.map((item) => (
               <SidebarMenuItem key={item.title}>
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <SidebarMenuButton 
                       asChild 
-                      className="w-10 h-10 p-0 flex items-center justify-center rounded-lg hover:bg-sidebar-accent hover:text-primary transition-all group"
+                      className="w-8 h-8 p-0 flex items-center justify-center rounded-lg hover:bg-sidebar-accent hover:text-primary transition-all group"
                     >
                       <Link href={item.url}>
-                        <item.icon className="w-5 h-5 text-sidebar-foreground group-hover:text-primary transition-colors flex-shrink-0" />
+                        <item.icon className="w-4 h-4 text-sidebar-foreground group-hover:text-primary transition-colors flex-shrink-0" />
                       </Link>
                     </SidebarMenuButton>
                   </TooltipTrigger>
@@ -93,8 +93,8 @@ export function AppSidebar() {
           </SidebarMenu>
         </SidebarContent>
         
-        <SidebarFooter className="flex flex-col items-center gap-6 pb-8">
-          <div className="w-8 h-px bg-sidebar-border/50" />
+        <SidebarFooter className="flex flex-col items-center gap-4 pb-6">
+          <div className="w-6 h-px bg-sidebar-border/50" />
           
           <Tooltip>
             <TooltipTrigger asChild>
@@ -102,9 +102,9 @@ export function AppSidebar() {
                 variant="ghost" 
                 size="icon" 
                 onClick={toggleTheme}
-                className="w-10 h-10 text-sidebar-foreground hover:bg-sidebar-accent rounded-lg"
+                className="w-8 h-8 text-sidebar-foreground hover:bg-sidebar-accent rounded-lg"
               >
-                {theme === "light" ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
+                {theme === "light" ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4" />}
               </Button>
             </TooltipTrigger>
             <TooltipContent side="right">
@@ -114,8 +114,8 @@ export function AppSidebar() {
 
           <Tooltip>
             <TooltipTrigger asChild>
-              <div className="w-10 h-10 flex items-center justify-center grayscale hover:grayscale-0 transition-all cursor-pointer">
-                <span className="text-xl">🇺🇸</span>
+              <div className="w-8 h-8 flex items-center justify-center grayscale hover:grayscale-0 transition-all cursor-pointer">
+                <span className="text-base">🇺🇸</span>
               </div>
             </TooltipTrigger>
             <TooltipContent side="right">
