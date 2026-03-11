@@ -44,15 +44,15 @@
     --chart-4: 285 31% 15%; /* Deep Night Berry */
     --chart-5: 282 41% 40%;
 
-    --sidebar-background: 40 10% 96%;
-    --sidebar-foreground: 285 31% 15%;
+    --sidebar-background: 285 31% 15%; /* Deep Night Berry */
+    --sidebar-foreground: 40 20% 98%;
     --sidebar-primary: 282 41% 63%;
     --sidebar-primary-foreground: 40 20% 98%;
-    --sidebar-accent: 22 52% 90%;
-    --sidebar-accent-foreground: 285 31% 15%;
-    --sidebar-border: 285 10% 90%;
+    --sidebar-accent: 285 31% 20%;
+    --sidebar-accent-foreground: 40 20% 98%;
+    --sidebar-border: 285 31% 20%;
     --sidebar-ring: 282 41% 63%;
-    --sidebar-width: 2.5rem;
+    --sidebar-width: 150px;
   }
 
   .dark {
