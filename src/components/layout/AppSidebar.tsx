@@ -1,4 +1,3 @@
-
 "use client";
 
 import * as React from "react";
@@ -9,8 +8,7 @@ import {
   Mail,
   Home,
   Moon,
-  Sun,
-  LayoutGrid
+  Sun
 } from "lucide-react";
 import {
   Sidebar,
@@ -32,7 +30,6 @@ import {
 const navItems = [
   { title: "Perfil", url: "#capabilities", icon: User },
   { title: "Proyectos", url: "#projects", icon: Briefcase },
-  { title: "Estrategia", url: "#ai-architect", icon: LayoutGrid },
   { title: "Contacto", url: "#contact", icon: Mail },
 ];
 
