@@ -8,7 +8,8 @@ import {
   Mail,
   Home,
   Moon,
-  Sun
+  Sun,
+  Languages
 } from "lucide-react";
 import {
   Sidebar,
@@ -17,7 +18,6 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-  SidebarFooter,
 } from "@/components/ui/sidebar";
 import { Button } from "@/components/ui/button";
 import {
@@ -39,7 +39,7 @@ export function AppSidebar() {
   React.useEffect(() => {
     const savedTheme = localStorage.getItem("theme") as "light" | "dark" | null;
     const initialTheme = savedTheme || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-    setTheme(initialTheme);
+    setTheme(initialTheme as "light" | "dark");
     if (initialTheme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
@@ -96,37 +96,45 @@ export function AppSidebar() {
                 </Tooltip>
               </SidebarMenuItem>
             ))}
+
+            {/* Theme Toggle - Directly below Mail icon */}
+            <SidebarMenuItem>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <SidebarMenuButton 
+                    onClick={toggleTheme}
+                    className="w-10 h-10 p-0 flex items-center justify-center rounded-xl hover:bg-accent/10 hover:text-accent transition-all group"
+                  >
+                    {theme === "light" ? (
+                      <Moon className="w-5 h-5 text-muted-foreground group-hover:text-accent transition-colors" />
+                    ) : (
+                      <Sun className="w-5 h-5 text-muted-foreground group-hover:text-accent transition-colors" />
+                    )}
+                  </SidebarMenuButton>
+                </TooltipTrigger>
+                <TooltipContent side="right">
+                  <p className="text-[10px] font-bold uppercase tracking-widest">Tema</p>
+                </TooltipContent>
+              </Tooltip>
+            </SidebarMenuItem>
+
+            {/* Language Selector - Directly below Theme toggle */}
+            <SidebarMenuItem>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <SidebarMenuButton 
+                    className="w-10 h-10 p-0 flex items-center justify-center rounded-xl hover:bg-primary/10 transition-all group grayscale hover:grayscale-0"
+                  >
+                    <span className="text-lg">🇺🇸</span>
+                  </SidebarMenuButton>
+                </TooltipTrigger>
+                <TooltipContent side="right">
+                  <p className="text-[10px] font-bold uppercase tracking-widest">English</p>
+                </TooltipContent>
+              </Tooltip>
+            </SidebarMenuItem>
           </SidebarMenu>
         </SidebarContent>
-        
-        <SidebarFooter className="flex flex-col items-center gap-6 pb-8">
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <Button 
-                variant="ghost" 
-                size="icon" 
-                onClick={toggleTheme}
-                className="w-10 h-10 text-muted-foreground hover:bg-accent/10 hover:text-accent rounded-xl"
-              >
-                {theme === "light" ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
-              </Button>
-            </TooltipTrigger>
-            <TooltipContent side="right">
-              <p className="text-[10px] font-bold uppercase tracking-widest">Tema</p>
-            </TooltipContent>
-          </Tooltip>
-
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <div className="w-10 h-10 flex items-center justify-center grayscale hover:grayscale-0 transition-all cursor-pointer">
-                <span className="text-xl">🇺🇸</span>
-              </div>
-            </TooltipTrigger>
-            <TooltipContent side="right">
-              <p className="text-[10px] font-bold uppercase tracking-widest">English</p>
-            </TooltipContent>
-          </Tooltip>
-        </SidebarFooter>
       </TooltipProvider>
     </Sidebar>
   );
