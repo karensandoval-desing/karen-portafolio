@@ -8,7 +8,7 @@ import * as z from "zod";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/ui/form";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Sparkles, Loader2, Search, Globe, ChevronRight } from "lucide-react";
 import { aiStrategyArchitect, type AIStrategyArchitectOutput } from "@/ai/flows/ai-strategy-architect";
 
@@ -61,13 +61,7 @@ export function StrategyArchitect() {
 
           <div className="grid lg:grid-cols-[1fr_2fr] gap-8">
             <Card className="glass-card border-white/10 h-fit">
-              <CardHeader>
-                <CardTitle className="text-xl">Analizar</CardTitle>
-                <CardDescription>
-                  Genera un brief estratégico instantáneo.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
+              <CardContent className="pt-6">
                 <Form {...form}>
                   <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
                     <FormField
