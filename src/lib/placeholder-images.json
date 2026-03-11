@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "aviatur-project",
+      "description": "Aviatur digital ecosystem and key visuals",
+      "imageUrl": "https://picsum.photos/seed/aviatur/800/600",
+      "imageHint": "travel technology"
+    },
+    {
+      "id": "bit-c-project",
+      "description": "Bit-C SEO and content architecture optimization",
+      "imageUrl": "https://picsum.photos/seed/bitc/800/600",
+      "imageHint": "data search"
+    },
+    {
+      "id": "kaput-project",
+      "description": "Kaput agency and high conversion landing pages",
+      "imageUrl": "https://picsum.photos/seed/kaput/800/600",
+      "imageHint": "digital marketing"
+    },
+    {
+      "id": "karen-portrait",
+      "description": "Professional portrait of Karen Sandoval",
+      "imageUrl": "https://picsum.photos/seed/karen/600/800",
+      "imageHint": "professional woman"
+    }
+  ]
 }
