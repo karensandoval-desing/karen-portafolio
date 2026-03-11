@@ -1,9 +1,11 @@
 
-import type {Metadata} from 'next';
+import type { Metadata } from 'next';
 import './globals.css';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Toaster } from '@/components/ui/toaster';
+import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
+import { AppSidebar } from '@/components/layout/AppSidebar';
 
 export const metadata: Metadata = {
   title: 'Sandoval Strategics | Digital Product Specialist & Visual Designer',
@@ -21,11 +23,26 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            (function() {
+              const theme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+              if (theme === 'dark') document.documentElement.classList.add('dark');
+            })();
+          `
+        }} />
       </head>
       <body className="font-body antialiased bg-background text-foreground">
-        <Navbar />
-        {children}
-        <Footer />
+        <SidebarProvider>
+          <AppSidebar />
+          <SidebarInset className="flex flex-col min-h-screen">
+            <Navbar />
+            <main className="flex-1">
+              {children}
+            </main>
+            <Footer />
+          </SidebarInset>
+        </SidebarProvider>
         <Toaster />
       </body>
     </html>
