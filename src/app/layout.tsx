@@ -4,8 +4,6 @@ import './globals.css';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Toaster } from '@/components/ui/toaster';
-import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
-import { AppSidebar } from '@/components/layout/AppSidebar';
 
 export const metadata: Metadata = {
   title: 'Sandoval Strategics | Digital Product Specialist & Visual Designer',
@@ -32,17 +30,12 @@ export default function RootLayout({
           `
         }} />
       </head>
-      <body className="font-body antialiased bg-background text-foreground">
-        <SidebarProvider>
-          <AppSidebar />
-          <SidebarInset className="flex flex-col min-h-screen">
-            <Navbar />
-            <main className="flex-1">
-              {children}
-            </main>
-            <Footer />
-          </SidebarInset>
-        </SidebarProvider>
+      <body className="font-body antialiased bg-background text-foreground transition-colors duration-500">
+        <Navbar />
+        <main className="min-h-screen">
+          {children}
+        </main>
+        <Footer />
         <Toaster />
       </body>
     </html>
