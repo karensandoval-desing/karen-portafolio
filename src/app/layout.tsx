@@ -1,7 +1,8 @@
 
 import type { Metadata } from 'next';
 import './globals.css';
-import { Navbar } from '@/components/layout/Navbar';
+import { AppSidebar } from '@/components/layout/AppSidebar';
+import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
 import { Footer } from '@/components/layout/Footer';
 import { Toaster } from '@/components/ui/toaster';
 
@@ -31,11 +32,17 @@ export default function RootLayout({
         }} />
       </head>
       <body className="font-body antialiased bg-background text-foreground transition-colors duration-500">
-        <Navbar />
-        <main className="min-h-screen">
-          {children}
-        </main>
-        <Footer />
+        <SidebarProvider defaultOpen={false}>
+          <div className="flex min-h-screen w-full">
+            <AppSidebar />
+            <SidebarInset className="flex flex-col w-full">
+              <main className="flex-1">
+                {children}
+              </main>
+              <Footer />
+            </SidebarInset>
+          </div>
+        </SidebarProvider>
         <Toaster />
       </body>
     </html>

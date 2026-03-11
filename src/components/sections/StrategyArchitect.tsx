@@ -54,9 +54,6 @@ export function StrategyArchitect() {
               <Sparkles className="w-3 h-3" /> Powered by GenAI
             </div>
             <h2 className="font-headline text-3xl md:text-5xl font-bold mb-6">AI Strategy Architect</h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Obtén una muestra de mi visión estratégica. Ingresa un tema o URL para generar recomendaciones preliminares de optimización y SEO.
-            </p>
           </div>
 
           <div className="grid lg:grid-cols-[1fr_2fr] gap-8">
