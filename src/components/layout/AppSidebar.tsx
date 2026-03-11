@@ -48,28 +48,28 @@ export function AppSidebar() {
 
   return (
     <Sidebar collapsible="none" className="w-[var(--sidebar-width)] border-r border-sidebar-border bg-sidebar overflow-hidden">
-      <SidebarHeader className="flex items-center justify-center pt-6 pb-8">
+      <SidebarHeader className="flex items-center justify-center pt-5 pb-6">
         <Link href="/">
           <Button 
             size="icon" 
-            className="w-9 h-9 rounded-full bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20 transition-all duration-300"
+            className="w-7 h-7 rounded-full bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/20 transition-all duration-300"
           >
-            <Home className="w-4 h-4" />
+            <Home className="w-3.5 h-3.5" />
           </Button>
         </Link>
       </SidebarHeader>
       
-      <SidebarContent className="flex flex-col items-center gap-6">
-        <SidebarMenu className="items-center gap-6">
+      <SidebarContent className="flex flex-col items-center gap-5">
+        <SidebarMenu className="items-center gap-5">
           {navItems.map((item) => (
             <SidebarMenuItem key={item.title}>
               <SidebarMenuButton 
                 asChild 
                 tooltip={item.title}
-                className="w-8 h-8 flex items-center justify-center p-0 rounded-lg hover:bg-sidebar-accent transition-colors"
+                className="w-6 h-6 flex items-center justify-center p-0 rounded-lg hover:bg-sidebar-accent transition-colors"
               >
                 <Link href={item.url}>
-                  <item.icon className="w-4 h-4 text-sidebar-foreground group-hover:text-sidebar-accent-foreground" />
+                  <item.icon className="w-3.5 h-3.5 text-sidebar-foreground group-hover:text-sidebar-accent-foreground" />
                 </Link>
               </SidebarMenuButton>
             </SidebarMenuItem>
@@ -77,21 +77,21 @@ export function AppSidebar() {
         </SidebarMenu>
       </SidebarContent>
       
-      <SidebarFooter className="flex flex-col items-center gap-4 pb-6">
-        <Button variant="ghost" size="icon" className="w-8 h-8 p-0 overflow-hidden rounded-full hover:bg-sidebar-accent">
-          <span className="text-sm">🇺🇸</span>
+      <SidebarFooter className="flex flex-col items-center gap-3 pb-5">
+        <Button variant="ghost" size="icon" className="w-6 h-6 p-0 overflow-hidden rounded-full hover:bg-sidebar-accent">
+          <span className="text-[10px]">🇺🇸</span>
         </Button>
         
         <Button 
           variant="ghost" 
           size="icon" 
           onClick={toggleTheme}
-          className="w-8 h-8 p-0 rounded-full hover:bg-sidebar-accent text-sidebar-foreground"
+          className="w-6 h-6 p-0 rounded-full hover:bg-sidebar-accent text-sidebar-foreground"
         >
           {theme === "light" ? (
-            <Moon className="w-4 h-4" />
+            <Moon className="w-3.5 h-3.5" />
           ) : (
-            <Sun className="w-4 h-4" />
+            <Sun className="w-3.5 h-3.5" />
           )}
         </Button>
       </SidebarFooter>
