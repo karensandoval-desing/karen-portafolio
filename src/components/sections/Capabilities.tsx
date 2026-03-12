@@ -1,33 +1,34 @@
+
 "use client";
 
-import { Palette, MousePointer2, Code2, Database, BrainCircuit } from "lucide-react";
+import { Palette, MousePointer2, Code2, Database, BrainCircuit, Fingerprint } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const pillars = [
   {
-    title: "Herramientas de Diseño",
-    icon: Palette,
-    features: ["Figma", "Adobe Creative Suite", "Canva", "Framer", "Webflow"]
+    title: "Estrategia & Branding",
+    icon: Fingerprint,
+    features: ["Storytelling Ejecutivo", "Identidad Visual", "Arquitectura de Marca", "Diferenciación de Mercado"]
   },
   {
-    title: "UX",
+    title: "Diseño & UX",
     icon: MousePointer2,
-    features: ["User Research", "Information Architecture", "Wireframing", "Prototyping", "Usability Testing"]
+    features: ["User Research", "Wireframing", "Prototyping High-Fi", "Usability Testing", "Figma Expert"]
   },
   {
-    title: "Front-end",
+    title: "Front-end Tech",
     icon: Code2,
-    features: ["HTML", "CSS", "Bootstrap", "Tailwind", "Angular", "JavaScript"]
+    features: ["HTML5 / CSS3 / SCSS", "Tailwind / Bootstrap", "Angular", "JavaScript / TypeScript"]
   },
   {
-    title: "Plataformas",
+    title: "Negocio & SEO",
     icon: Database,
-    features: ["WordPress", "Shopify", "Magento"]
+    features: ["SEO Técnico", "Core Web Vitals", "Conversión (CRO)", "E-commerce (Shopify/WP)"]
   },
   {
-    title: "Herramientas de IA",
+    title: "Ecosistemas IA",
     icon: BrainCircuit,
-    features: ["Midjourney", "Runway", "ChatGPT", "GenAI", "Copilot"]
+    features: ["GenAI Strategy", "Midjourney", "Prompt Engineering", "Workflow Automation"]
   }
 ];
 
@@ -36,7 +37,10 @@ export function Capabilities() {
     <section id="capabilities" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="mb-16">
-          <h2 className="font-headline text-3xl md:text-5xl font-bold tracking-tight">Mis Habilidades</h2>
+          <h2 className="font-headline text-3xl md:text-5xl font-bold tracking-tight">Especialidades <span className="text-gradient">Integradas</span></h2>
+          <p className="text-muted-foreground mt-4 max-w-2xl text-lg">
+            Combinando diseño de alta fidelidad con viabilidad técnica para optimizar el rendimiento operativo y de negocio.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">

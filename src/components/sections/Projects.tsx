@@ -33,7 +33,7 @@ const projects = [
     image: PlaceHolderImages.find(img => img.id === 'aviatur-project'),
     marcasAliadas: ["Ecopetrol", "NatGeo", "Corona", "Festiver"],
     resumenEjecutivo: "Orquestación y despliegue masivo para el holding de turismo líder en Colombia, gestionando la identidad y operatividad de 130 agencias bajo un núcleo tecnológico centralizado.",
-    desafioEstrategico: "La fragmentación visual y técnica que impedía la ejecución ágil de campañas masivas para aliados como NatGeo, Corona y Ecopetrol.",
+    desafioEstrategico: "La fragmentación visual y técnica que impedía la ejecución ágil de campañas masivas para aliados globales.",
     justificacion: "Este impacto se logró mediante la migración de sitios individuales a un modelo de Core Compartido. Implementamos una arquitectura de componentes en SCSS que permitía inyectar variables de marca (logos, colores, tipografía) sin tocar la estructura lógica. El 0% de error se garantizó mediante un protocolo de QA Visual automatizado y manual antes de cada lanzamiento de campaña ATL/BTL.",
     impacto: [
       { label: "Capacidad de Escala", value: "+760%", desc: "De 15 a 130+ sitios", icon: TrendingUp },
@@ -49,7 +49,7 @@ const projects = [
     image: PlaceHolderImages.find(img => img.id === 'bit-c-project'),
     marcasAliadas: ["Bit-C", "Fintech Labs", "Crypto Connect"],
     resumenEjecutivo: "Optimización de activos digitales de alto rendimiento, actuando como el puente técnico entre el diseño UI y la realidad del desarrollo frontend y posicionamiento orgánico.",
-    desafioEstrategico: "La falta de alineación entre la estética visual y los requerimientos técnicos de indexación y performance (Core Web Vitals).",
+    desafioEstrategico: "Desalineación entre la estética visual y los requerimientos de indexación y Core Web Vitals.",
     justificacion: "La optimización se basó en una auditoría técnica de arquitectura de información. Rediseñamos el DOM para priorizar la jerarquía de encabezados (H1-H3) y la carga de recursos críticos. La reducción del 20% en tiempo se debió a la creación de una librería de componentes en HTML5/CSS3 validados, eliminando la fricción entre el equipo creativo y el equipo de desarrollo backend.",
     impacto: [
       { label: "Landings SEO", value: "12", desc: "Optimizadas desde código", icon: Search },
@@ -65,7 +65,7 @@ const projects = [
     image: PlaceHolderImages.find(img => img.id === 'kaput-project'),
     marcasAliadas: ["C-Level Network", "B2B Elite", "Growth Partners"],
     resumenEjecutivo: "Fundación y dirección de una agencia digital boutique especializada en branding estratégico y captación de C-Level (Ejecutivos de 35 a 55 años).",
-    desafioEstrategico: "Penetrar un mercado corporativo de alta gama mediante una narrativa visual que combine autoridad y conversión digital.",
+    desafioEstrategico: "Penetración de mercado corporativo mediante narrativa visual de autoridad y conversión digital.",
     justificacion: "El Market Fit del 70% se validó mediante el análisis de tasa de respuesta y calidad de leads captados. Diseñamos un embudo de conversión 'High-Ticket' donde cada punto de contacto visual (desde el feed de Instagram hasta la landing page) fue curado para transmitir el rigor ejecutivo necesario para cerrar contratos B2B y gestionar estrategias de Influencer Growth con impacto real.",
     impacto: [
       { label: "Market Fit", value: "70%", desc: "Segmento C-Level", icon: Target },
@@ -83,10 +83,10 @@ export function Projects() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6">
           <div className="max-w-2xl">
             <h2 className="font-headline text-accent text-sm font-bold uppercase tracking-[0.3em] mb-4">Selección de Proyectos</h2>
-            <h3 className="font-headline text-3xl md:text-5xl font-bold leading-tight">Resultados Tangibles y Visión de Negocio</h3>
+            <h3 className="font-headline text-3xl md:text-5xl font-bold leading-tight">Casos de Estudio Estratégicos</h3>
           </div>
           <div className="text-muted-foreground text-sm max-w-sm italic border-l border-primary/30 pl-4">
-            Análisis de impacto basado en métricas de rendimiento y eficiencia operativa. Haz clic en las métricas para ver la justificación técnica.
+            Análisis de impacto basado en métricas reales. Haz clic en las tarjetas de impacto para visualizar el Data Proof (Justificación Técnica).
           </div>
         </div>
 
@@ -149,7 +149,7 @@ export function Projects() {
                   </div>
 
                   <div className="pt-6 space-y-4">
-                    <span className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] block">Impacto (Data Proof)</span>
+                    <span className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] block">Impacto (Data Cards)</span>
                     
                     <Dialog>
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
