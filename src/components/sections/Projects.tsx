@@ -31,7 +31,7 @@ const projects = [
     role: "Ecosistema Architect & Lead QA",
     image: PlaceHolderImages.find(img => img.id === 'aviatur-project'),
     marcasAliadas: ["Ecopetrol", "NatGeo", "Corona", "Festiver"],
-    resumenEjecutivo: "Orquestación y despliegue masivo para el holding de turismo líder en Colombia, gestionando la identidad y operatividad de 130 agencias bajo un núcleo tecnológico centralizado.",
+    resumenEjecutivo: "Formé parte activa de la articulación y transición hacia una infraestructura digital masiva para el holding de turismo más influyente de Colombia. Lideré la gestión de identidad y operatividad de 130 agencias independientes, garantizando una integridad visual impecable para cuentas críticas. Diseñé ecosistemas digitales y landings de alto impacto para marcas globales como NatGeo, Corona y Ecopetrol, interpretando de manera asertiva su ADN de marca y traduciéndolo en interfaces escalables dentro de nuestras plataformas tecnológicas.",
     desafioEstrategico: "La fragmentación visual y técnica que impedía la ejecución ágil de campañas masivas para aliados globales.",
     justificacion: "Este impacto se logró mediante la migración de sitios individuales a un modelo de Core Compartido. Implementamos una arquitectura de componentes en SCSS que permitía inyectar variables de marca (logos, colores, tipografía) sin tocar la estructura lógica. El 0% de error se garantizó mediante un protocolo de QA Visual automatizado y manual antes de cada lanzamiento de campaña ATL/BTL.",
     impacto: [
@@ -201,4 +201,3 @@ export function Projects() {
     </section>
   );
 }
-
