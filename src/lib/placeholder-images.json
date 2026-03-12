@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "aviatur-project",
-      "description": "Aviatur website shown on multiple devices (monitor, laptop, and phone) in a clean professional workspace",
-      "imageUrl": "/perfil-aviatur.png",
-      "imageHint": "devices workspace"
+      "description": "Ecosistema digital de Aviatur desplegado en múltiples dispositivos profesionales (monitor, laptop y móvil) en un entorno de trabajo limpio.",
+      "imageUrl": "https://picsum.photos/seed/aviatur-v3/800/600",
+      "imageHint": "devices travel"
     },
     {
       "id": "bit-c-project",
