@@ -27,7 +27,7 @@ const projects = [
   {
     id: "aviatur",
     title: "Aviatur (Escalabilidad Masiva)",
-    role: "Ecosistema Architect & Lead QA",
+    role: "Diseñadora Web",
     image: PlaceHolderImages.find(img => img.id === 'aviatur-project'),
     marcasAliadas: ["Ecopetrol", "NatGeo", "Corona", "Festiver"],
     resumenEjecutivo: "Formé parte activa de la articulación y transición hacia una infraestructura digital masiva para el holding de turismo más influyente de Colombia. Lideré la gestión de identidad y operatividad de 130 agencias independientes, garantizando una integridad visual impecable para cuentas críticas. Diseñé ecosistemas digitales y landings de alto impacto para marcas globales como NatGeo, Corona y Ecopetrol, interpretando de manera asertiva su ADN de marca y traduciéndolo en interfaces escalables dentro de nuestras plataformas tecnológicas.",
@@ -59,8 +59,8 @@ const projects = [
   },
   {
     id: "bit-c",
-    title: "Bit-C (Estrategia SEO y Producto)",
-    role: "Bridge Specialist & SEO Strategist",
+    title: "Bit-C (Ciclo de Vida & Diseño de Producto)",
+    role: "Diseñadora web | Diseñadora UX UI | Lider Digital",
     image: PlaceHolderImages.find(img => img.id === 'bit-c-project'),
     marcasAliadas: ["Bit-C", "Fintech Labs", "Crypto Connect"],
     resumenEjecutivo: "Optimización de activos digitales de alto rendimiento, actuando como el puente técnico entre el diseño UI y la realidad del desarrollo frontend y posicionamiento orgánico.",
