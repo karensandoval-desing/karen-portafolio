@@ -3,13 +3,13 @@
     {
       "id": "aviatur-project",
       "description": "Ecosistema digital de Aviatur desplegado en múltiples dispositivos profesionales (monitor, laptop y móvil) en un entorno de trabajo limpio.",
-      "imageUrl": "https://picsum.photos/seed/aviatur-v3/800/600",
+      "imageUrl": "/perfil-aviatur.png",
       "imageHint": "devices travel"
     },
     {
       "id": "bit-c-project",
       "description": "Bit-C SEO and content architecture optimization",
-      "imageUrl": "https://picsum.photos/seed/bitc/800/600",
+      "imageUrl": "/perfil-bit-c.png",
       "imageHint": "data search"
     },
     {

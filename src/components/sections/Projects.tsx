@@ -15,7 +15,8 @@ import {
   ShieldCheck, 
   Layers,
   Info,
-  ExternalLink
+  ExternalLink,
+  PlayCircle
 } from "lucide-react";
 import {
   Dialog,
@@ -62,7 +63,7 @@ const projects = [
     id: "kaput",
     title: "Kaput (Emprendimiento 360°)",
     role: "Founder & Creative Director",
-    image: PlaceHolderImages.find(img => img.id === 'kaput-project'),
+    videoUrl: "https://player.vimeo.com/external/370331493.sd.mp4?s=7b9273294371f544e7c3c43715e2e8489e50e8f7&profile_id=164&oauth2_token_id=57447761",
     marcasAliadas: ["C-Level Network", "B2B Elite", "Growth Partners"],
     resumenEjecutivo: "Fundación y dirección de una agencia digital boutique especializada en branding estratégico y captación de C-Level (Ejecutivos de 35 a 55 años).",
     desafioEstrategico: "Penetración de mercado corporativo mediante narrativa visual de autoridad y conversión digital.",
@@ -86,7 +87,7 @@ export function Projects() {
             <h3 className="font-headline text-3xl md:text-5xl font-bold leading-tight">Casos de Estudio Estratégicos</h3>
           </div>
           <div className="text-muted-foreground text-sm max-w-sm italic border-l border-primary/30 pl-4">
-            Análisis de impacto basado en métricas reales. Haz clic en las tarjetas de impacto para visualizar el Data Proof (Justificación Técnica).
+            Análisis de impacto basado en métricas reales de negocio. Haz clic en las tarjetas de impacto para visualizar el Data Proof (Justificación Técnica).
           </div>
         </div>
 
@@ -98,13 +99,24 @@ export function Projects() {
                 <div className="relative group">
                   <div className="absolute inset-0 bg-primary/20 rounded-[2rem] blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                   <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] border border-white/5 shadow-2xl bg-card">
-                    <Image 
-                      src={project.image?.imageUrl || ''} 
-                      alt={project.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-1000"
-                      data-ai-hint={project.image?.imageHint}
-                    />
+                    {project.videoUrl ? (
+                      <video 
+                        src={project.videoUrl}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                      />
+                    ) : (
+                      <Image 
+                        src={project.image?.imageUrl || ''} 
+                        alt={project.title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-1000"
+                        data-ai-hint={project.image?.imageHint}
+                      />
+                    )}
                   </div>
                 </div>
 
@@ -113,7 +125,7 @@ export function Projects() {
                   {project.marcasAliadas?.map((marca) => (
                     <span 
                       key={marca} 
-                      className="text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/40 hover:text-accent transition-all cursor-default grayscale hover:grayscale-0 hover:scale-110"
+                      className="text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/40 hover:text-accent transition-all cursor-default grayscale hover:grayscale-0 hover:opacity-100 hover:scale-110"
                     >
                       {marca}
                     </span>
@@ -149,7 +161,7 @@ export function Projects() {
                   </div>
 
                   <div className="pt-6 space-y-4">
-                    <span className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] block">Impacto (Data Cards)</span>
+                    <span className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] block">Impacto (Data Proof Clickable)</span>
                     
                     <Dialog>
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
