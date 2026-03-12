@@ -4,7 +4,7 @@
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Badge } from "@/components/ui/badge";
-import { BrainCircuit, Code2, Users2, Zap } from "lucide-react";
+import { BrainCircuit, Code2, Users2 } from "lucide-react";
 
 export function StrategicProfile() {
   const portrait = PlaceHolderImages.find(img => img.id === 'karen-portrait');
@@ -18,8 +18,9 @@ export function StrategicProfile() {
         <div className="max-w-6xl mx-auto">
           {/* Header Narrativo */}
           <div className="mb-16 max-w-4xl animate-in fade-in slide-in-from-bottom-6 duration-1000">
-            <h2 className="font-headline text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-8">
-              La Mente detrás del Sistema: <span className="text-gradient">Diseño con Propósito de Negocio</span>
+            <h2 className="text-3xl md:text-5xl lg:text-6xl tracking-tighter mb-8 font-bold leading-tight">
+              <span className="font-playfair italic font-medium">La Mente detrás del Sistema:</span>{" "}
+              <span className="text-gradient">Diseño con Propósito de Negocio</span>
             </h2>
             <div className="space-y-6 text-lg md:text-xl text-muted-foreground leading-relaxed font-body">
               <p>
@@ -87,7 +88,7 @@ export function StrategicProfile() {
                 El puente entre la estética y la realidad del código.
               </p>
               <div className="flex flex-wrap gap-2">
-                {['HTML5/SCSS', 'QA Staging', 'SEO', 'Performance'].map(tag => (
+                {['HTML5/SCSS', 'QA Staging', 'Technical SEO', 'Performance'].map(tag => (
                   <Badge key={tag} variant="secondary" className="bg-white/5 text-[9px] px-2 py-0 border-white/5">
                     {tag}
                   </Badge>
@@ -102,7 +103,7 @@ export function StrategicProfile() {
                 <h3 className="font-bold text-lg">Liderazgo</h3>
               </div>
               <p className="text-[11px] text-muted-foreground leading-relaxed">
-                Mentoria senior para equipos creativos y traducción técnica para stakeholders. <span className="text-foreground">Capacidad de simplificar lo complejo.</span>
+                Mentoria senior para equipos creativos y traducción técnica para stakeholders no técnicos. <span className="text-foreground">Capacidad de simplificar lo complejo.</span>
               </p>
             </div>
           </div>
