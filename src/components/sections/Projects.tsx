@@ -63,7 +63,7 @@ const projects = [
     role: "Diseñadora web | Diseñadora UX UI | Lider Digital",
     image: PlaceHolderImages.find(img => img.id === 'bit-c-project'),
     marcasAliadas: ["Bit-C", "Fintech Labs", "Crypto Connect"],
-    resumenEjecutivo: "Optimización de activos digitales de alto rendimiento, actuando como el puente técnico entre el diseño UI y la realidad del desarrollo frontend y posicionamiento orgánico.",
+    resumenEjecutivo: "Colaboré en la definición estratégica y el diseño de producto, integrando el análisis de negocio con la arquitectura de experiencia (UX). Trabajé de la mano con el equipo de tecnología para asegurar la transición fluida de conceptos visuales (UI) a implementaciones técnicas viables, brindando soporte continuo durante el desarrollo. Mi aporte en la estructuración de la información ayudó a consolidar un ecosistema digital optimizado, donde el rendimiento y el posicionamiento orgánico fueron el resultado de un diseño funcional y centrado en la conversión.",
     desafioEstrategico: "Desalineación entre la estética visual y los requerimientos de indexación y Core Web Vitals.",
     impacto: [
       { 
