@@ -85,7 +85,7 @@ export function Projects() {
             <h3 className="font-headline text-3xl md:text-5xl font-bold leading-tight">Casos de Estudio Estratégicos</h3>
           </div>
           <div className="text-muted-foreground text-sm max-w-sm italic border-l border-primary/30 pl-4">
-            Análisis de impacto basado en métricas reales de negocio. Haz clic en las tarjetas de impacto para visualizar el Data Proof (Justificación Técnica).
+            Análisis de impacto basado en métricas reales de negocio. Haz clic en las tarjetas de impacto para visualizar la Justificación Técnica.
           </div>
         </div>
 
@@ -175,7 +175,7 @@ export function Projects() {
                           <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
                             <ShieldCheck className="w-6 h-6" />
                           </div>
-                          <DialogTitle className="text-2xl font-bold text-gradient mb-2">Data Proof: Justificación Técnica</DialogTitle>
+                          <DialogTitle className="text-2xl font-bold text-gradient mb-2">Justificación Técnica</DialogTitle>
                         </DialogHeader>
                         <div className="space-y-6">
                           <p className="text-foreground leading-relaxed italic text-lg border-l-2 border-accent pl-4">
