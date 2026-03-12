@@ -33,11 +33,28 @@ const projects = [
     marcasAliadas: ["Ecopetrol", "NatGeo", "Corona", "Festiver"],
     resumenEjecutivo: "Formé parte activa de la articulación y transición hacia una infraestructura digital masiva para el holding de turismo más influyente de Colombia. Lideré la gestión de identidad y operatividad de 130 agencias independientes, garantizando una integridad visual impecable para cuentas críticas. Diseñé ecosistemas digitales y landings de alto impacto para marcas globales como NatGeo, Corona y Ecopetrol, interpretando de manera asertiva su ADN de marca y traduciéndolo en interfaces escalables dentro de nuestras plataformas tecnológicas.",
     desafioEstrategico: "La fragmentación visual y técnica que impedía la ejecución ágil de campañas masivas para aliados globales.",
-    justificacion: "Implementamos un \"Core System\" centralizado en colaboración con el área de TI, utilizando arquitectura modular SCSS para inyectar identidades visuales dinámicamente. Esta estrategia eliminó la redundancia técnica, permitiendo un escalamiento exponencial de +130 instancias con estabilidad absoluta y optimización de recursos.",
     impacto: [
-      { label: "Capacidad de Escala", value: "+760%", desc: "De 15 a 130+ sitios", icon: TrendingUp },
-      { label: "Errores de Marca", value: "0%", desc: "Garantía QA técnica", icon: CheckCircle2 },
-      { label: "Tiempo de Despliegue", value: "-50%", desc: "En actualizaciones", icon: Clock },
+      { 
+        label: "Capacidad de Escala", 
+        value: "+760%", 
+        desc: "De 15 a 130+ sitios", 
+        icon: TrendingUp,
+        justificacion: "Implementamos un \"Core System\" centralizado en colaboración con el área de TI, utilizando arquitectura modular SCSS para inyectar identidades visuales dinámicamente. Esta estrategia eliminó la redundancia técnica, permitiendo un escalamiento exponencial de +130 instancias con estabilidad absoluta."
+      },
+      { 
+        label: "Errores de Marca", 
+        value: "0%", 
+        desc: "Garantía QA técnica", 
+        icon: CheckCircle2,
+        justificacion: "Para garantizar la integridad de marcas globales con manuales de identidad sumamente estrictos, se estableció un protocolo de QA Visual y técnico. Validaciones en entornos de componentes atómicos antes de cada despliegue masivo, asegurando que cada una de las 130 agencias reflejara la excelencia visual y fidelidad de marca exigida por los aliados."
+      },
+      { 
+        label: "Tiempo de Despliegue", 
+        value: "-50%", 
+        desc: "En actualizaciones", 
+        icon: Clock,
+        justificacion: "La centralización de la lógica de negocio y estilos base permitió que las actualizaciones de seguridad y mejoras de UI se propagaran automáticamente por todo el ecosistema, optimizando los recursos operativos del holding."
+      },
     ],
     tags: ["Ecosystem Design", "Scalability", "Visual Identity"]
   },
@@ -49,11 +66,28 @@ const projects = [
     marcasAliadas: ["Bit-C", "Fintech Labs", "Crypto Connect"],
     resumenEjecutivo: "Optimización de activos digitales de alto rendimiento, actuando como el puente técnico entre el diseño UI y la realidad del desarrollo frontend y posicionamiento orgánico.",
     desafioEstrategico: "Desalineación entre la estética visual y los requerimientos de indexación y Core Web Vitals.",
-    justificacion: "La optimización se basó en una auditoría técnica de arquitectura de información. Rediseñamos el DOM para priorizar la jerarquía de encabezados (H1-H3) y la carga de recursos críticos. La reducción del 20% en tiempo se debió a la creación de una librería de componentes en HTML5/CSS3 validados, eliminando la fricción entre el equipo creativo y el equipo de desarrollo backend.",
     impacto: [
-      { label: "Landings SEO", value: "12", desc: "Optimizadas desde código", icon: Search },
-      { label: "Tiempo Dev", value: "-20%", desc: "Componentes DRY", icon: Zap },
-      { label: "Eficiencia Hand-off", value: "+45%", desc: "Diseño a Dev", icon: Workflow },
+      { 
+        label: "Landings SEO", 
+        value: "12", 
+        desc: "Optimizadas desde código", 
+        icon: Search,
+        justificacion: "Rediseñamos el DOM para priorizar la jerarquía de encabezados (H1-H3) y la carga de recursos críticos, asegurando una indexación impecable y tiempos de respuesta bajo los estándares de Core Web Vitals."
+      },
+      { 
+        label: "Tiempo Dev", 
+        value: "-20%", 
+        desc: "Componentes DRY", 
+        icon: Zap,
+        justificacion: "La creación de una librería de componentes en HTML5/CSS3 validados eliminó la fricción entre el equipo creativo y el desarrollo backend, acelerando el ciclo de entrega."
+      },
+      { 
+        label: "Eficiencia Hand-off", 
+        value: "+45%", 
+        desc: "Diseño a Dev", 
+        icon: Workflow,
+        justificacion: "Establecimos un sistema de diseño técnico que sirvió como lenguaje común, reduciendo drásticamente las iteraciones correctivas durante la fase de implementación."
+      },
     ],
     tags: ["Technical SEO", "Information Architecture", "UX Strategy"]
   },
@@ -65,11 +99,28 @@ const projects = [
     marcasAliadas: ["C-Level Network", "B2B Elite", "Growth Partners"],
     resumenEjecutivo: "Fundación y dirección de una agencia digital boutique especializada en branding estratégico y captación de C-Level (Ejecutivos de 35 a 55 años).",
     desafioEstrategico: "Penetración de mercado corporativo mediante narrativa visual de autoridad y conversión digital.",
-    justificacion: "El Market Fit del 70% se validó mediante el análisis de tasa de respuesta y calidad de leads captados. Diseñamos un embudo de conversión 'High-Ticket' donde cada punto de contacto visual (desde el feed de Instagram hasta la landing page) fue curado para transmitir el rigor ejecutivo necesario para cerrar contratos B2B y gestionar estrategias de Influencer Growth con impacto real.",
     impacto: [
-      { label: "Market Fit", value: "70%", desc: "Segmento C-Level", icon: Target },
-      { label: "Control Brand Equity", value: "100%", desc: "Presencia Omnicanal", icon: ShieldCheck },
-      { label: "Estrategia Omnicanal", value: "360°", desc: "Influencer Growth", icon: Layers },
+      { 
+        label: "Market Fit", 
+        value: "70%", 
+        desc: "Segmento C-Level", 
+        icon: Target,
+        justificacion: "Diseñamos un embudo de conversión 'High-Ticket' donde cada punto de contacto visual fue curado para transmitir el rigor ejecutivo necesario para cerrar contratos B2B."
+      },
+      { 
+        label: "Control Brand Equity", 
+        value: "100%", 
+        desc: "Presencia Omnicanal", 
+        icon: ShieldCheck,
+        justificacion: "Validamos la consistencia de marca mediante el análisis de tasa de respuesta y calidad de leads, asegurando que el storytelling fuera coherente en todas las plataformas."
+      },
+      { 
+        label: "Estrategia Omnicanal", 
+        value: "360°", 
+        desc: "Influencer Growth", 
+        icon: Layers,
+        justificacion: "Orquestamos estrategias de crecimiento que integraron marketing de influencia con ecosistemas digitales propios, optimizando el retorno de inversión de la agencia."
+      },
     ],
     tags: ["Business Model", "Conversion", "Growth"]
   }
@@ -150,10 +201,10 @@ export function Projects() {
                   <div className="pt-6 space-y-4">
                     <span className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] block">Impacto</span>
                     
-                    <Dialog>
-                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                        {project.impacto.map((item, i) => (
-                          <DialogTrigger asChild key={i}>
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                      {project.impacto.map((item, i) => (
+                        <Dialog key={i}>
+                          <DialogTrigger asChild>
                             <button className="glass-card p-4 rounded-2xl border-white/5 bg-secondary/10 flex flex-col gap-2 hover:border-primary/20 transition-all text-left group cursor-pointer hover:bg-secondary/20 active:scale-[0.98]">
                               <div className="flex items-center justify-between">
                                 <item.icon className="w-4 h-4 text-accent group-hover:scale-110 transition-transform" />
@@ -167,30 +218,29 @@ export function Projects() {
                               </div>
                             </button>
                           </DialogTrigger>
-                        ))}
-                      </div>
-
-                      <DialogContent className="glass-card border-primary/20 bg-background/80 backdrop-blur-2xl sm:max-w-[500px] rounded-[2rem] p-8">
-                        <DialogHeader>
-                          <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
-                            <ShieldCheck className="w-6 h-6" />
-                          </div>
-                          <DialogTitle className="text-2xl font-bold text-gradient mb-2">Justificación Técnica</DialogTitle>
-                        </DialogHeader>
-                        <div className="space-y-6">
-                          <p className="text-foreground leading-relaxed italic text-lg border-l-2 border-accent pl-4">
-                            {project.justificacion}
-                          </p>
-                          <div className="p-4 bg-primary/5 rounded-xl border border-primary/10 flex items-start gap-3">
-                            <Zap className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                            <div>
-                              <p className="text-[10px] uppercase font-bold text-primary tracking-widest mb-1">Impacto Verificado</p>
-                              <span className="text-muted-foreground text-xs leading-tight">Análisis basado en métricas reales de negocio y performance técnica bajo auditoría de QA.</span>
+                          <DialogContent className="glass-card border-primary/20 bg-background/80 backdrop-blur-2xl sm:max-w-[500px] rounded-[2rem] p-8">
+                            <DialogHeader>
+                              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
+                                <ShieldCheck className="w-6 h-6" />
+                              </div>
+                              <DialogTitle className="text-2xl font-bold text-gradient mb-2">Justificación Técnica</DialogTitle>
+                            </DialogHeader>
+                            <div className="space-y-6">
+                              <p className="text-foreground leading-relaxed italic text-lg border-l-2 border-accent pl-4">
+                                {item.justificacion}
+                              </p>
+                              <div className="p-4 bg-primary/5 rounded-xl border border-primary/10 flex items-start gap-3">
+                                <Zap className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
+                                <div>
+                                  <p className="text-[10px] uppercase font-bold text-primary tracking-widest mb-1">Impacto Verificado</p>
+                                  <span className="text-muted-foreground text-xs leading-tight">Análisis basado en métricas reales de negocio y performance técnica bajo auditoría de QA.</span>
+                                </div>
+                              </div>
                             </div>
-                          </div>
-                        </div>
-                      </DialogContent>
-                    </Dialog>
+                          </DialogContent>
+                        </Dialog>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
