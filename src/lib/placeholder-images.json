@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "aviatur-project",
-      "description": "Aviatur digital ecosystem and key visuals",
-      "imageUrl": "https://picsum.photos/seed/aviatur/800/600",
-      "imageHint": "travel technology"
+      "description": "Aviatur website shown on multiple devices (monitor, laptop, and phone) in a clean professional workspace",
+      "imageUrl": "https://picsum.photos/seed/aviatur-devices-ui/800/600",
+      "imageHint": "devices workspace"
     },
     {
       "id": "bit-c-project",
