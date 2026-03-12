@@ -7,9 +7,8 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { 
   TrendingUp, 
   CheckCircle2, 
-  Clock, 
-  Search, 
   Zap, 
+  Search, 
   Workflow, 
   Target, 
   ShieldCheck, 
@@ -31,7 +30,7 @@ const projects = [
     role: "Ecosistema Architect & Lead QA",
     image: PlaceHolderImages.find(img => img.id === 'aviatur-project'),
     marcasAliadas: ["Ecopetrol", "NatGeo", "Corona", "Festiver"],
-    resumenEjecutivo: "Formé parte activa de la articulación y transición hacia una infraestructura digital masiva para el holding de turismo más influyente de Colombia. Lideré la gestión de identidad y operatividad de 130 agencias independientes, garantizando una integridad visual impecable para cuentas críticas. Diseñé ecosistemas digitales y landings de alto impacto para marcas globales como NatGeo, Corona y Ecopetrol, interpretando de manera asertiva su ADN de marca y traduciéndolo en interfaces escalables dentro de nuestras plataformas tecnológicas.",
+    resumenEjecutivo: "Formé parte activa de la articulación y transición hacia una infraestructura digital masiva para el holding de turismo más influyente de Colombia. Lideré la gestión de identidad y operatividad de 130 agencias independientes, garantizando una integridad visual impecable para cuentas críticas. Diseñé ecosistemas digitales y landings de alto impacto para marcas globales como NatGeo, Corona y Ecopetrol, interpretando de manera asertiva su ADN de marca y traduciéndolo en interfaces scalables dentro de nuestras plataformas tecnológicas.",
     desafioEstrategico: "La fragmentación visual y técnica que impedía la ejecución ágil de campañas masivas para aliados globales.",
     impacto: [
       { 
@@ -49,11 +48,11 @@ const projects = [
         justificacion: "Para garantizar la integridad de marcas globales con manuales de identidad sumamente estrictos, se estableció un protocolo de QA Visual y técnico. Validaciones en entornos de componentes atómicos antes de cada despliegue masivo, asegurando que cada una de las 130 agencias reflejara la excelencia visual y fidelidad de marca exigida por los aliados."
       },
       { 
-        label: "Tiempo de Despliegue", 
-        value: "-50%", 
-        desc: "En actualizaciones", 
-        icon: Clock,
-        justificacion: "La centralización de la lógica de negocio y estilos base permitió que las actualizaciones de seguridad y mejoras de UI se propagaran automáticamente por todo el ecosistema, optimizando los recursos operativos del holding."
+        label: "Eficiencia", 
+        value: "+45%", 
+        desc: "Entrega técnica", 
+        icon: Zap,
+        justificacion: "Mejoramos la eficiencia de entrega técnica en un 45% mediante documentación funcional y especificaciones de assets."
       },
     ],
     tags: ["Ecosystem Design", "Scalability", "Visual Identity"]
