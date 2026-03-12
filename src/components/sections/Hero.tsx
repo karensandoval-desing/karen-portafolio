@@ -21,12 +21,12 @@ export function Hero() {
             Estrategia de Producto & Diseño Visual
           </div>
           
-          <h1 className="font-headline text-5xl md:text-8xl font-bold tracking-tighter mb-8 leading-[0.95] animate-in fade-in slide-in-from-bottom-6 duration-700">
-            Optimizando Ecosistemas <span className="text-gradient">Escalables</span>
+          <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-8 leading-[0.95] animate-in fade-in slide-in-from-bottom-6 duration-700">
+            Diseño que Entiende el Código. <span className="text-gradient">Estrategia que Impulsa el Negocio.</span>
           </h1>
           
           <p className="font-body text-lg md:text-xl text-muted-foreground mb-10 leading-relaxed max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-8 duration-1000">
-            Soy <span className="text-foreground font-semibold">Karen Sandoval</span>. El puente estratégico entre diseño de alta fidelidad, viabilidad técnica y resultados de negocio.
+            Optimizando el rendimiento digital mediante diseño UI/UX de alto nivel y arquitectura técnica
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-in fade-in slide-in-from-bottom-10 duration-1000">
