@@ -14,9 +14,7 @@ import {
   Target, 
   ShieldCheck, 
   Layers,
-  Info,
-  ExternalLink,
-  PlayCircle
+  Info
 } from "lucide-react";
 import {
   Dialog,
@@ -63,7 +61,7 @@ const projects = [
     id: "kaput",
     title: "Kaput (Emprendimiento 360°)",
     role: "Founder & Creative Director",
-    videoUrl: "https://player.vimeo.com/external/370331493.sd.mp4?s=7b9273294371f544e7c3c43715e2e8489e50e8f7&profile_id=164&oauth2_token_id=57447761",
+    image: PlaceHolderImages.find(img => img.id === 'kaput-project'),
     marcasAliadas: ["C-Level Network", "B2B Elite", "Growth Partners"],
     resumenEjecutivo: "Fundación y dirección de una agencia digital boutique especializada en branding estratégico y captación de C-Level (Ejecutivos de 35 a 55 años).",
     desafioEstrategico: "Penetración de mercado corporativo mediante narrativa visual de autoridad y conversión digital.",
@@ -99,24 +97,13 @@ export function Projects() {
                 <div className="relative group">
                   <div className="absolute inset-0 bg-primary/20 rounded-[2rem] blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                   <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] border border-white/5 shadow-2xl bg-card">
-                    {project.videoUrl ? (
-                      <video 
-                        src={project.videoUrl}
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
-                      />
-                    ) : (
-                      <Image 
-                        src={project.image?.imageUrl || ''} 
-                        alt={project.title}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-1000"
-                        data-ai-hint={project.image?.imageHint}
-                      />
-                    )}
+                    <Image 
+                      src={project.image?.imageUrl || ''} 
+                      alt={project.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-1000"
+                      data-ai-hint={project.image?.imageHint}
+                    />
                   </div>
                 </div>
 
@@ -214,3 +201,4 @@ export function Projects() {
     </section>
   );
 }
+
