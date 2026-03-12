@@ -148,7 +148,7 @@ export function Projects() {
                   </div>
 
                   <div className="pt-6 space-y-4">
-                    <span className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] block">Impacto (Data Proof Clickable)</span>
+                    <span className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] block">Impacto</span>
                     
                     <Dialog>
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -201,3 +201,4 @@ export function Projects() {
     </section>
   );
 }
+
