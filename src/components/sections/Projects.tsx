@@ -4,7 +4,25 @@
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { TrendingUp, CheckCircle2, Clock, Search, Zap, Workflow, Target, ShieldCheck, Layers } from "lucide-react";
+import { 
+  TrendingUp, 
+  CheckCircle2, 
+  Clock, 
+  Search, 
+  Zap, 
+  Workflow, 
+  Target, 
+  ShieldCheck, 
+  Layers,
+  Info
+} from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 const projects = [
   {
@@ -14,6 +32,7 @@ const projects = [
     image: PlaceHolderImages.find(img => img.id === 'aviatur-project'),
     resumenEjecutivo: "Orquestación y despliegue masivo para el holding de turismo líder en Colombia, gestionando la identidad y operatividad de 130 agencias bajo un núcleo tecnológico centralizado.",
     desafioEstrategico: "La fragmentación visual y técnica que impedía la ejecución ágil de campañas masivas para aliados como NatGeo, Corona y Ecopetrol.",
+    justificacion: "Este impacto se logró mediante la migración de sitios individuales a un modelo de Core Compartido. Implementamos una arquitectura de componentes en SCSS que permitía inyectar variables de marca (logos, colores, tipografía) sin tocar la estructura lógica. El 0% de error se garantizó mediante un protocolo de QA Visual automatizado y manual antes de cada lanzamiento de campaña ATL/BTL.",
     impacto: [
       { label: "Capacidad de Escala", value: "+760%", desc: "De 15 a 130+ sitios", icon: TrendingUp },
       { label: "Errores de Marca", value: "0%", desc: "Garantía QA técnica", icon: CheckCircle2 },
@@ -28,9 +47,10 @@ const projects = [
     image: PlaceHolderImages.find(img => img.id === 'bit-c-project'),
     resumenEjecutivo: "Optimización de activos digitales de alto rendimiento, actuando como el puente técnico entre el diseño UI y la realidad del desarrollo frontend y posicionamiento orgánico.",
     desafioEstrategico: "La falta de alineación entre la estética visual y los requerimientos técnicos de indexación y performance (Core Web Vitals).",
+    justificacion: "La optimización se basó en una auditoría técnica de arquitectura de información. Rediseñamos el DOM para priorizar la jerarquía de encabezados (H1-H3) y la carga de recursos críticos. La reducción del 20% en tiempo se debió a la creación de una librería de componentes en HTML5/CSS3 validados, eliminando la fricción entre el equipo creativo y el equipo de desarrollo backend.",
     impacto: [
-      { label: "Landings Optimizadas", value: "12", desc: "SEO On-page nativo", icon: Search },
-      { label: "Tiempo de Impl.", value: "-20%", desc: "Componentes DRY", icon: Zap },
+      { label: "Landings SEO", value: "12", desc: "Optimizadas desde código", icon: Search },
+      { label: "Tiempo Dev", value: "-20%", desc: "Componentes DRY", icon: Zap },
       { label: "Eficiencia Hand-off", value: "+45%", desc: "Diseño a Dev", icon: Workflow },
     ],
     tags: ["Technical SEO", "Information Architecture", "UX Strategy"]
@@ -42,10 +62,11 @@ const projects = [
     image: PlaceHolderImages.find(img => img.id === 'kaput-project'),
     resumenEjecutivo: "Fundación y dirección de una agencia digital boutique especializada en branding estratégico y captación de C-Level (Ejecutivos de 35 a 55 años).",
     desafioEstrategico: "Penetrar un mercado corporativo de alta gama mediante una narrativa visual que combine autoridad y conversión digital.",
+    justificacion: "El Market Fit del 70% se validó mediante el análisis de tasa de respuesta y calidad de leads captados. Diseñamos un embudo de conversión 'High-Ticket' donde cada punto de contacto visual (desde el feed de Instagram hasta la landing page) fue curado para transmitir el rigor ejecutivo necesario para cerrar contratos B2B y gestionar estrategias de Influencer Growth con impacto real.",
     impacto: [
       { label: "Market Fit", value: "70%", desc: "Segmento C-Level", icon: Target },
-      { label: "Brand Equity", value: "100%", desc: "Control Omnicanal", icon: ShieldCheck },
-      { label: "Estrategia 360°", value: "Growth", desc: "Influencer Rigor", icon: Layers },
+      { label: "Control Brand Equity", value: "100%", desc: "Presencia Omnicanal", icon: ShieldCheck },
+      { label: "Estrategia Omnicanal", value: "360°", desc: "Influencer Growth", icon: Layers },
     ],
     tags: ["Business Model", "Conversion", "Growth"]
   }
@@ -61,7 +82,7 @@ export function Projects() {
             <h3 className="font-headline text-3xl md:text-5xl font-bold leading-tight">Resultados Tangibles y Visión de Negocio</h3>
           </div>
           <div className="text-muted-foreground text-sm max-w-sm italic border-l border-primary/30 pl-4">
-            Análisis de impacto basado en métricas de rendimiento y eficiencia operativa.
+            Análisis de impacto basado en métricas de rendimiento y eficiencia operativa. Haz clic en las métricas para ver la justificación técnica.
           </div>
         </div>
 
@@ -93,7 +114,7 @@ export function Projects() {
                     ))}
                   </div>
                   <h4 className="text-3xl md:text-4xl font-bold mb-2 tracking-tight">{project.title}</h4>
-                  <p className="text-accent font-bold text-sm uppercase tracking-widest">Mi Rol: {project.role}</p>
+                  <p className="text-accent font-bold text-sm uppercase tracking-widest mb-1">Mi Rol: {project.role}</p>
                 </div>
                 
                 <div className="space-y-8">
@@ -108,21 +129,45 @@ export function Projects() {
                   </div>
 
                   <div className="pt-6 space-y-4">
-                    <span className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] block">Impacto</span>
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                      {project.impacto.map((item, i) => (
-                        <div key={i} className="glass-card p-4 rounded-2xl border-white/5 bg-secondary/10 flex flex-col gap-2 hover:border-primary/20 transition-colors">
-                          <div className="flex items-center justify-between">
-                            <item.icon className="w-4 h-4 text-accent" />
-                            <span className="text-2xl font-black text-primary tracking-tighter">{item.value}</span>
-                          </div>
-                          <div>
-                            <p className="text-[10px] font-bold text-foreground uppercase tracking-tight leading-none">{item.label}</p>
-                            <p className="text-[9px] text-muted-foreground mt-1">{item.desc}</p>
+                    <span className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] block">Impacto (Data Proof)</span>
+                    
+                    <Dialog>
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        {project.impacto.map((item, i) => (
+                          <DialogTrigger asChild key={i}>
+                            <button className="glass-card p-4 rounded-2xl border-white/5 bg-secondary/10 flex flex-col gap-2 hover:border-primary/20 transition-all text-left group cursor-pointer hover:bg-secondary/20 active:scale-[0.98]">
+                              <div className="flex items-center justify-between">
+                                <item.icon className="w-4 h-4 text-accent group-hover:scale-110 transition-transform" />
+                                <span className="text-2xl font-black text-primary tracking-tighter">{item.value}</span>
+                              </div>
+                              <div>
+                                <p className="text-[10px] font-bold text-foreground uppercase tracking-tight leading-none flex items-center gap-1">
+                                  {item.label} <Info className="w-2.5 h-2.5 opacity-0 group-hover:opacity-40 transition-opacity" />
+                                </p>
+                                <p className="text-[9px] text-muted-foreground mt-1">{item.desc}</p>
+                              </div>
+                            </button>
+                          </DialogTrigger>
+                        ))}
+                      </div>
+
+                      <DialogContent className="glass-card border-primary/20 bg-background/80 backdrop-blur-2xl sm:max-w-[500px] rounded-[2rem]">
+                        <DialogHeader>
+                          <DialogTitle className="text-2xl font-bold text-gradient mb-2">Data Proof: Justificación</DialogTitle>
+                        </DialogHeader>
+                        <div className="space-y-4">
+                          <p className="text-foreground leading-relaxed italic text-lg">
+                            {project.justificacion}
+                          </p>
+                          <div className="p-4 bg-primary/5 rounded-xl border border-primary/10">
+                            <p className="text-[10px] uppercase font-bold text-primary tracking-widest mb-1">Impacto Verificado</p>
+                            <div className="flex justify-between items-end">
+                              <span className="text-muted-foreground text-xs leading-tight">Análisis basado en métricas reales de negocio y performance técnica.</span>
+                            </div>
                           </div>
                         </div>
-                      ))}
-                    </div>
+                      </DialogContent>
+                    </Dialog>
                   </div>
                 </div>
               </div>
@@ -133,3 +178,4 @@ export function Projects() {
     </section>
   );
 }
+
