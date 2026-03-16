@@ -96,7 +96,7 @@ const projects = [
     title: "Kaput (Emprendimiento 360°)",
     role: "Founder & Creative Director",
     image: PlaceHolderImages.find(img => img.id === 'kaput-project'),
-    marcasAliadas: ["C-Level Network", "B2B Elite", "Growth Partners"],
+    marcasAliadas: ["Color Mocca Marroquineria", "Autonal", "Paladar Grill", "tia resentilia"],
     resumenEjecutivo: "Liderazgo en la estructuración y desarrollo de la presencia digital de Kaput, integrando estrategia de marca, marketing digital y posicionamiento online.",
     desafioEstrategico: "Construir una presencia digital estratégica que permitiera a Kaput conectar con audiencias ejecutivas y posicionarse como una agencia confiable en el mercado corporativo.",
     impacto: [
