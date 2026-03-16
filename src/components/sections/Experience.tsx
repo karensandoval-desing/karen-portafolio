@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 const experiences = [
   {
     company: "Aviatur",
-    role: "Ecosistema Architect & Lead QA",
+    role: "diseñadora web",
     period: "2014 - Presente",
     highlights: [
       "Orquestación masiva de ecosistemas digitales para el holding de turismo líder.",
@@ -18,7 +18,7 @@ const experiences = [
   },
   {
     company: "AECSA",
-    role: "UX/UI Specialist & Dashboard Architect",
+    role: "diseñadora web",
     highlights: [
       "Transformación de la gestión de cobranza y ventas mediante dashboards robustos para TI.",
       "Digitalización total del flujo de gestión de reportes estáticos a visualizaciones dinámicas.",
