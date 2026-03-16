@@ -8,15 +8,13 @@ import {
   TrendingUp, 
   CheckCircle2, 
   Zap, 
-  Search, 
-  Workflow, 
-  Target, 
+  Monitor,
+  Users2,
+  Activity,
   ShieldCheck, 
   Layers,
   Info,
-  Monitor,
-  Users2,
-  Activity
+  Target
 } from "lucide-react";
 import {
   Dialog,
@@ -74,7 +72,7 @@ const projects = [
         value: "12+", 
         desc: "Estrategia, UX, SEO y estructura digital", 
         icon: Monitor,
-        justificacion: "Desarrollo y optimización de un ecosistema diverso de plataformas y landing pages, integrando estrategias avanzadas de SEO y UX para maximizar la visibilidad y conversión corporativa."
+        justificacion: "Durante mi gestión en BIT-C, lideré la conceptualización y creación de más de 12 plataformas y landings para distintos productos y clientes. Esto incluyó el análisis de necesidades, definición de arquitectura de información, diseño de experiencias visuales intuitivas y optimización SEO desde la estructura del sitio. Entre estas soluciones se encuentran plataformas como Mi Trámite Ya y Móviliza Ya, además de sitios robustos como AUTONAL, donde se priorizó la jerarquía de contenidos, usabilidad y rendimiento web."
       },
       { 
         label: "REUNIONES ESTRATÉGICAS", 
