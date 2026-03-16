@@ -79,14 +79,14 @@ const projects = [
         value: "50+", 
         desc: "Discovery, análisis de necesidades y definición de soluciones digitales", 
         icon: Users2,
-        justificacion: "Liderazgo en sesiones de discovery y análisis técnico-estratégico con stakeholders para definir soluciones digitales alineadas con los objetivos de negocio de grandes corporativos."
+        justificacion: "Participé y lideré más de 50 sesiones estratégicas con clientes, equipos de desarrollo y áreas internas para comprender necesidades de negocio, levantar requerimientos y definir soluciones digitales. Estas reuniones permitieron traducir objetivos comerciales en productos digitales funcionales, facilitando la toma de decisiones sobre arquitectura web, experiencia de usuario y alcance técnico de los proyectos."
       },
       { 
         label: "OPTIMIZACIÓN DIGITAL", 
         value: "+40%", 
         desc: "Mejoras en UX, SEO, arquitectura web y soporte técnico a desarrollo", 
         icon: Activity,
-        justificacion: "Implementación de mejoras críticas en la arquitectura web y soporte técnico continuo, resultando en un incremento significativo del rendimiento y la consistencia digital de los aliados."
+        justificacion: "A través de análisis continuo, investigación de tendencias y optimización de procesos digitales, impulsé mejoras significativas en la calidad de las soluciones web. Esto incluyó la optimización de arquitectura de información, buenas prácticas de SEO, apoyo técnico al equipo de desarrollo para mejorar implementaciones y ajustes en experiencia de usuario. Estas acciones contribuyeron a incrementar la eficiencia del desarrollo y la calidad del producto digital final."
       },
     ],
     tags: ["Technical SEO", "Information Architecture", "UX Strategy"]
