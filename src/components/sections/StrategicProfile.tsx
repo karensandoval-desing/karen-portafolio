@@ -72,7 +72,7 @@ export function StrategicProfile() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
               <div className="absolute bottom-6 md:bottom-8 left-6 md:left-8 right-6 md:right-8">
-                <h4 className="text-xl md:text-2xl font-bold text-white mb-1">Karen Sandoval</h4>
+                <h4 className="text-xl md:text-2xl font-bold text-primary dark:text-white mb-1">Karen Sandoval</h4>
               </div>
             </div>
 
