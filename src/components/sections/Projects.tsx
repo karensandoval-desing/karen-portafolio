@@ -39,7 +39,7 @@ const projects = [
         value: "+760%", 
         desc: "De 15 a 130+ sitios", 
         icon: TrendingUp,
-        justificacion: "Implementamos un \"Core System\" centralizado en colaboración con el área de TI, utilizando arquitectura modular SCSS para inyectar identidades visuales dinámicamente. Esta estrategia eliminó la redundancia técnica, permitiendo un escalamiento exponencial de +130 instancias con estabilidad absoluta."
+        justificacion: "Implementamos un \"Core System\" centralizado en colaboración con el área de TI, utilizando arquitectura modular SCSS para inyectar identidades visuales dinámicamente. Esta estrategia eliminó la redundancia técnica, permitiendo un escalamiento exponencial de +130 instancias con estabilidad absoluta y optimización de recursos."
       },
       { 
         label: "Errores de Marca", 
@@ -97,8 +97,8 @@ const projects = [
     role: "Founder & Creative Director",
     image: PlaceHolderImages.find(img => img.id === 'kaput-project'),
     marcasAliadas: ["C-Level Network", "B2B Elite", "Growth Partners"],
-    resumenEjecutivo: "Fundación y dirección de una agencia digital boutique especializada en branding estratégico y captación de C-Level (Ejecutivos de 35 a 55 años).",
-    desafioEstrategico: "Penetración de mercado corporativo mediante narrativa visual de autoridad y conversión digital.",
+    resumenEjecutivo: "Liderazgo en la estructuración y desarrollo de la presencia digital de Kaput, integrando estrategia de marca, marketing digital y posicionamiento online.",
+    desafioEstrategico: "Construir una presencia digital estratégica que permitiera a Kaput conectar con audiencias ejecutivas y posicionarse como una agencia confiable en el mercado corporativo.",
     impacto: [
       { 
         label: "Market Fit", 
