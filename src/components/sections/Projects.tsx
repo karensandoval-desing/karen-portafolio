@@ -228,13 +228,6 @@ export function Projects() {
                               <p className="text-foreground leading-relaxed italic text-lg border-l-2 border-accent pl-4">
                                 {item.justificacion}
                               </p>
-                              <div className="p-4 bg-primary/5 rounded-xl border border-primary/10 flex items-start gap-3">
-                                <Zap className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                                <div>
-                                  <p className="text-[10px] uppercase font-bold text-primary tracking-widest mb-1">Impacto Verificado</p>
-                                  <span className="text-muted-foreground text-xs leading-tight">Análisis basado en métricas reales de negocio y performance técnica bajo auditoría de QA.</span>
-                                </div>
-                              </div>
                             </div>
                           </DialogContent>
                         </Dialog>
