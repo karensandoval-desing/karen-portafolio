@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Briefcase, ShieldCheck, Users, Rocket, Target, Award, Database, Cpu } from "lucide-react";
@@ -7,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 const experiences = [
   {
     company: "Aviatur",
-    role: "diseñadora web",
+    role: "Diseñadora Web",
     period: "2014 - Presente",
     highlights: [
       "Orquestación masiva de ecosistemas digitales para el holding de turismo líder.",
@@ -18,7 +17,7 @@ const experiences = [
   },
   {
     company: "AECSA",
-    role: "diseñadora web",
+    role: "Diseñadora Web",
     highlights: [
       "Transformación de la gestión de cobranza y ventas mediante dashboards robustos para TI.",
       "Digitalización total del flujo de gestión de reportes estáticos a visualizaciones dinámicas.",
