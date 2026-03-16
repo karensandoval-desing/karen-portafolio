@@ -93,8 +93,8 @@ const projects = [
   },
   {
     id: "kaput",
-    title: "Kaput (Emprendimiento 360°)",
-    role: "Founder & Creative Director",
+    title: "Kaput",
+    role: "Digital Lead | Liderazgo estratégico en el desarrollo y posicionamiento digital de la agencia",
     image: PlaceHolderImages.find(img => img.id === 'kaput-project'),
     marcasAliadas: ["Color Mocca Marroquineria", "Autonal", "Paladar Grill", "tia resentilia"],
     resumenEjecutivo: "Liderazgo en la estructuración y desarrollo de la presencia digital de Kaput, integrando estrategia de marca, marketing digital y posicionamiento online.",
