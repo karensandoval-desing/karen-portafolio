@@ -1,7 +1,5 @@
-
 "use client";
 
-import Link from "next/link";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 
 export function Navbar() {
@@ -12,9 +10,6 @@ export function Navbar() {
       <div className="container mx-auto px-4 h-14 flex items-center justify-between">
         <div className="flex items-center gap-4">
           <SidebarTrigger />
-          <Link href="/" className="font-headline font-black text-xs tracking-widest uppercase">
-            SANDOVAL<span className="text-primary">STRATEGICS</span>
-          </Link>
         </div>
       </div>
     </header>
