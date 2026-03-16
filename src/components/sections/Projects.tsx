@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -128,23 +127,23 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-24">
+    <section id="projects" className="py-20 md:py-24">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-20 gap-6">
           <div className="max-w-2xl">
             <h2 className="font-headline text-accent text-sm font-bold uppercase tracking-[0.3em] mb-4">Selección de Proyectos</h2>
-            <h3 className="font-headline text-3xl md:text-5xl font-bold leading-tight">Casos de Estudio Estratégicos</h3>
+            <h3 className="font-headline text-3xl md:text-5xl font-bold leading-tight tracking-tight">Casos de Estudio Estratégicos</h3>
           </div>
           <div className="text-muted-foreground text-sm max-w-sm italic border-l border-primary/30 pl-4">
             Análisis de impacto basado en métricas reales de negocio. Haz clic en las tarjetas de impacto para visualizar la Justificación Técnica.
           </div>
         </div>
 
-        <div className="space-y-40">
+        <div className="space-y-24 md:space-y-40">
           {projects.map((project, idx) => (
-            <div key={project.id} className={`flex flex-col ${idx % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-16 items-start`}>
+            <div key={project.id} className={`flex flex-col ${idx % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 md:gap-16 items-start`}>
               {/* Visual Side */}
-              <div className="w-full lg:w-1/2 sticky top-24">
+              <div className="w-full lg:w-1/2 md:sticky md:top-24">
                 <div className="relative group">
                   <div className="absolute inset-0 bg-primary/20 rounded-[2rem] blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                   <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] border border-white/5 shadow-2xl bg-card">
@@ -158,12 +157,12 @@ export function Projects() {
                   </div>
                 </div>
 
-                {/* Trust Bar - Logos aliadas */}
-                <div className="mt-8 px-6 py-4 glass-card rounded-2xl border-white/5 flex flex-wrap items-center justify-center gap-8 md:gap-12 animate-in fade-in duration-700">
+                {/* Trust Bar - Allied Logos with Flex Wrap */}
+                <div className="mt-6 md:mt-8 px-4 md:px-6 py-4 glass-card rounded-2xl border-white/5 flex flex-wrap items-center justify-center gap-6 md:gap-12 animate-in fade-in duration-700">
                   {project.marcasAliadas?.map((marca) => (
                     <span 
                       key={marca} 
-                      className="text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/40 hover:text-accent transition-all cursor-default grayscale hover:grayscale-0 hover:opacity-100 hover:scale-110"
+                      className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/40 hover:text-accent transition-all cursor-default grayscale hover:grayscale-0 hover:opacity-100 hover:scale-110"
                     >
                       {marca}
                     </span>
@@ -172,35 +171,36 @@ export function Projects() {
               </div>
 
               {/* Content Side */}
-              <div className="w-full lg:w-1/2 space-y-8">
+              <div className="w-full lg:w-1/2 space-y-6 md:space-y-8">
                 <div>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map(tag => (
-                      <Badge key={tag} variant="secondary" className="bg-primary/5 text-primary border-primary/20 text-[10px] uppercase tracking-wider px-3">
+                      <Badge key={tag} variant="secondary" className="bg-primary/5 text-primary border-primary/20 text-[9px] md:text-[10px] uppercase tracking-wider px-3">
                         {tag}
                       </Badge>
                     ))}
                   </div>
-                  <h4 className="text-3xl md:text-4xl font-bold mb-2 tracking-tight">{project.title}</h4>
+                  <h4 className="text-2xl md:text-4xl font-bold mb-3 tracking-tight">{project.title}</h4>
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-accent/10 border border-accent/20">
-                    <p className="text-accent font-bold text-[10px] uppercase tracking-widest">Mi Rol: {project.role}</p>
+                    <p className="text-accent font-bold text-[9px] md:text-[10px] uppercase tracking-widest leading-none">Mi Rol: {project.role}</p>
                   </div>
                 </div>
                 
-                <div className="space-y-8">
+                <div className="space-y-6 md:space-y-8">
                   <div className="space-y-2">
-                    <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-[0.2em] block">Resumen Ejecutivo</span>
-                    <p className="text-foreground text-lg leading-relaxed font-medium">{project.resumenEjecutivo}</p>
+                    <span className="text-[9px] md:text-[10px] font-bold text-muted-foreground uppercase tracking-[0.2em] block">Resumen Ejecutivo</span>
+                    <p className="text-foreground text-base md:text-lg leading-relaxed font-medium">{project.resumenEjecutivo}</p>
                   </div>
 
                   <div className="space-y-2">
-                    <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-[0.2em] block">El Desafío Estratégico</span>
-                    <p className="text-muted-foreground text-base leading-relaxed">{project.desafioEstrategico}</p>
+                    <span className="text-[9px] md:text-[10px] font-bold text-muted-foreground uppercase tracking-[0.2em] block">El Desafío Estratégico</span>
+                    <p className="text-muted-foreground text-sm md:text-base leading-relaxed">{project.desafioEstrategico}</p>
                   </div>
 
-                  <div className="pt-6 space-y-4">
-                    <span className="text-[10px] font-bold text-primary uppercase tracking-[0.2em] block">Impacto</span>
+                  <div className="pt-4 md:pt-6 space-y-4">
+                    <span className="text-[9px] md:text-[10px] font-bold text-primary uppercase tracking-[0.2em] block">Impacto</span>
                     
+                    {/* Impact Cards: Stacked on mobile, 3 columns on desktop */}
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                       {project.impacto.map((item, i) => (
                         <Dialog key={i}>
@@ -208,25 +208,25 @@ export function Projects() {
                             <button className="glass-card p-4 rounded-2xl border-white/5 bg-secondary/10 flex flex-col gap-2 hover:border-primary/20 transition-all text-left group cursor-pointer hover:bg-secondary/20 active:scale-[0.98]">
                               <div className="flex items-center justify-between">
                                 <item.icon className="w-4 h-4 text-accent group-hover:scale-110 transition-transform" />
-                                <span className="text-2xl font-black text-primary tracking-tighter">{item.value}</span>
+                                <span className="text-xl md:text-2xl font-black text-primary tracking-tighter">{item.value}</span>
                               </div>
                               <div>
-                                <p className="text-[10px] font-bold text-foreground uppercase tracking-tight leading-none flex items-center gap-1">
+                                <p className="text-[9px] md:text-[10px] font-bold text-foreground uppercase tracking-tight leading-none flex items-center gap-1">
                                   {item.label} <Info className="w-2.5 h-2.5 opacity-0 group-hover:opacity-40 transition-opacity" />
                                 </p>
-                                <p className="text-[9px] text-muted-foreground mt-1">{item.desc}</p>
+                                <p className="text-[8px] md:text-[9px] text-muted-foreground mt-1">{item.desc}</p>
                               </div>
                             </button>
                           </DialogTrigger>
-                          <DialogContent className="glass-card border-primary/20 bg-background/80 backdrop-blur-2xl sm:max-w-[500px] rounded-[2rem] p-8">
+                          <DialogContent className="glass-card border-primary/20 bg-background/95 backdrop-blur-2xl sm:max-w-[500px] rounded-[2rem] p-6 md:p-8 max-h-[90vh] overflow-y-auto">
                             <DialogHeader>
                               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
                                 <ShieldCheck className="w-6 h-6" />
                               </div>
-                              <DialogTitle className="text-2xl font-bold text-gradient mb-2">Justificación Técnica</DialogTitle>
+                              <DialogTitle className="text-xl md:text-2xl font-bold text-gradient mb-2">Justificación Técnica</DialogTitle>
                             </DialogHeader>
                             <div className="space-y-6">
-                              <p className="text-foreground leading-relaxed italic text-lg border-l-2 border-accent pl-4">
+                              <p className="text-foreground leading-relaxed italic text-base md:text-lg border-l-2 border-accent pl-4">
                                 {item.justificacion}
                               </p>
                             </div>
