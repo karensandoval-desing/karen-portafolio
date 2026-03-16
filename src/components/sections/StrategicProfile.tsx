@@ -74,7 +74,6 @@ export function StrategicProfile() {
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
               <div className="absolute bottom-8 left-8 right-8">
                 <h4 className="text-2xl font-bold text-white mb-1">Karen Sandoval</h4>
-                <p className="text-accent font-bold text-xs uppercase tracking-widest">The Bridge Specialist</p>
               </div>
             </div>
 
