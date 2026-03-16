@@ -25,17 +25,17 @@ export function StrategicProfile() {
               <p>
                 Forjada en el dinámico ecosistema digital desde 2014, mi trayectoria no ha sido solo diseñar interfaces, sino orquestar soluciones. He entendido que un gran diseño es inútil si no es escalable, y que un código perfecto es invisible si no conecta con el usuario.
               </p>
-              <p className="text-foreground">
+              <p className="text-foreground font-medium">
                 Mi diferencial radica en ser el <span className="font-bold text-primary">puente crítico</span>. Hablo el <span className="font-bold">lenguaje del desarrollador backend</span>, entiendo las <span className="font-bold">métricas del estratega de marketing</span> y ejecuto con la <span className="font-bold">sensibilidad de una directora de arte</span>.
               </p>
             </div>
           </div>
 
-          {/* Bento Grid: Refactored for better mobile responsiveness */}
+          {/* Bento Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             
             {/* Tarjeta 1: Estrategia & Producto (Grande) */}
-            <div className="md:col-span-2 lg:row-span-2 glass-card p-6 md:p-8 rounded-[2rem] border-white/5 flex flex-col justify-between group hover:border-primary/30 transition-all duration-500">
+            <div className="md:col-span-2 lg:row-span-2 glass-card p-6 md:p-8 rounded-[2.5rem] flex flex-col justify-between group hover:border-primary/30 transition-all duration-500">
               <div>
                 <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
                   <BrainCircuit className="w-6 h-6" />
@@ -44,25 +44,25 @@ export function StrategicProfile() {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
-                    <span className="text-sm md:text-base text-muted-foreground"><span className="text-foreground font-medium">Arquitectura de Información:</span> Flujos complejos.</span>
+                    <span className="text-sm md:text-base text-muted-foreground"><span className="text-foreground font-semibold">Arquitectura de Información:</span> Flujos complejos.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
-                    <span className="text-sm md:text-base text-muted-foreground"><span className="text-foreground font-medium">Visión de Negocio:</span> Alineación de KPIs y ROI.</span>
+                    <span className="text-sm md:text-base text-muted-foreground"><span className="text-foreground font-semibold">Visión de Negocio:</span> Alineación de KPIs y ROI.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
-                    <span className="text-sm md:text-base text-muted-foreground"><span className="text-foreground font-medium">Gestión de Producto:</span> De ideación a Go-to-Market.</span>
+                    <span className="text-sm md:text-base text-muted-foreground"><span className="text-foreground font-semibold">Gestión de Producto:</span> De ideación a Go-to-Market.</span>
                   </li>
                 </ul>
               </div>
-              <div className="pt-6 border-t border-white/5 mt-8">
-                <p className="text-xs font-bold uppercase tracking-widest text-primary/60">Estratégicamente Rentable</p>
+              <div className="pt-6 border-t border-border mt-8">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-primary/70">Estratégicamente Rentable</p>
               </div>
             </div>
 
             {/* Tarjeta 2: Perfil/Imagen (Vertical) */}
-            <div className="relative rounded-[2rem] overflow-hidden group border border-white/5 shadow-2xl aspect-[3/4] md:aspect-auto md:row-span-2">
+            <div className="relative rounded-[2.5rem] overflow-hidden group border border-border shadow-xl aspect-[3/4] md:aspect-auto md:row-span-2">
               <Image 
                 src={portrait?.imageUrl || ""} 
                 alt="Karen Sandoval Portrait"
@@ -70,16 +70,17 @@ export function StrategicProfile() {
                 className="object-cover transition-all duration-1000 group-hover:scale-105"
                 data-ai-hint="professional woman portrait"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/10 to-transparent" />
               <div className="absolute bottom-6 md:bottom-8 left-6 md:left-8 right-6 md:right-8">
-                <h4 className="text-xl md:text-2xl font-bold text-foreground dark:text-white mb-1">Karen Sandoval</h4>
+                <h4 className="text-xl md:text-2xl font-bold text-foreground mb-1 drop-shadow-sm">Karen Sandoval</h4>
+                <p className="text-[10px] uppercase tracking-widest font-bold text-primary">Diseñadora Web</p>
               </div>
             </div>
 
             {/* Tarjeta 3: Ejecución Técnica */}
-            <div className="glass-card p-6 rounded-[2rem] border-white/5 flex flex-col justify-center group hover:border-accent/30 transition-all duration-500">
+            <div className="glass-card p-6 rounded-[2.5rem] flex flex-col justify-center group hover:border-primary/30 transition-all duration-500">
               <div className="flex items-center gap-3 mb-4">
-                <Code2 className="w-5 h-5 text-accent" />
+                <Code2 className="w-5 h-5 text-primary" />
                 <h3 className="font-bold text-lg">Ejecución Técnica</h3>
               </div>
               <p className="text-xs text-muted-foreground mb-4 leading-relaxed">
@@ -87,7 +88,7 @@ export function StrategicProfile() {
               </p>
               <div className="flex flex-wrap gap-2">
                 {['HTML5/SCSS', 'QA Staging', 'Technical SEO', 'Performance'].map(tag => (
-                  <Badge key={tag} variant="secondary" className="bg-white/5 text-[9px] px-2 py-0 border-white/5">
+                  <Badge key={tag} variant="secondary" className="bg-secondary text-[9px] px-2 py-0 border-transparent">
                     {tag}
                   </Badge>
                 ))}
@@ -95,13 +96,13 @@ export function StrategicProfile() {
             </div>
 
             {/* Tarjeta 4: Liderazgo */}
-            <div className="glass-card p-6 rounded-[2rem] border-white/5 flex flex-col justify-center group hover:border-primary/30 transition-all duration-500">
+            <div className="glass-card p-6 rounded-[2.5rem] flex flex-col justify-center group hover:border-primary/30 transition-all duration-500">
               <div className="flex items-center gap-3 mb-4">
                 <Users2 className="w-5 h-5 text-primary" />
                 <h3 className="font-bold text-lg">Liderazgo</h3>
               </div>
               <p className="text-[11px] text-muted-foreground leading-relaxed">
-                Mentoria senior para equipos creativos y traducción técnica para stakeholders no técnicos. <span className="text-foreground">Capacidad de simplificar lo complejo.</span>
+                Mentoria senior para equipos creativos y traducción técnica para stakeholders no técnicos. <span className="text-foreground font-medium">Capacidad de simplificar lo complejo.</span>
               </p>
             </div>
           </div>

@@ -68,18 +68,18 @@ const achievements = [
 
 export function Experience() {
   return (
-    <section id="experience" className="py-24 bg-secondary/10">
+    <section id="experience" className="py-24 bg-secondary/30 dark:bg-secondary/10">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="font-headline text-accent text-sm font-bold uppercase tracking-[0.3em] mb-4">Trayectoria Distinguida</h2>
+            <h2 className="font-headline text-primary text-sm font-bold uppercase tracking-[0.3em] mb-4">Trayectoria Distinguida</h2>
             <h3 className="font-headline text-3xl md:text-5xl font-bold">Liderazgo y Resultados de Negocio</h3>
           </div>
 
           <div className="grid lg:grid-cols-[2fr_1fr] gap-12">
             <div className="space-y-8">
               {experiences.map((exp, idx) => (
-                <div key={idx} className="glass-card p-8 rounded-2xl relative overflow-hidden group border-white/5 hover:border-primary/20 transition-all">
+                <div key={idx} className="glass-card p-8 rounded-[2.5rem] relative overflow-hidden group hover:border-primary/30 transition-all">
                   <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
                     <exp.icon className="w-24 h-24" />
                   </div>
@@ -89,7 +89,7 @@ export function Experience() {
                       <p className="text-lg font-medium">{exp.role}</p>
                     </div>
                     {exp.period && (
-                      <Badge variant="outline" className="w-fit h-fit mt-2 md:mt-0 font-mono text-[10px] border-primary/20 text-primary">
+                      <Badge variant="outline" className="w-fit h-fit mt-2 md:mt-0 font-mono text-[10px] border-primary/30 text-primary">
                         {exp.period}
                       </Badge>
                     )}
@@ -109,16 +109,16 @@ export function Experience() {
             </div>
 
             <div className="space-y-6">
-              <h5 className="text-[10px] font-bold text-accent uppercase tracking-[0.3em] mb-6">Reconocimientos & Infraestructura</h5>
+              <h5 className="text-[10px] font-bold text-primary uppercase tracking-[0.3em] mb-6">Reconocimientos & Infraestructura</h5>
               {achievements.map((item, idx) => (
-                <div key={idx} className="bg-background/40 p-6 rounded-2xl border border-white/5 hover:border-accent/20 transition-all group">
-                  <item.icon className="w-6 h-6 text-accent mb-4 group-hover:scale-110 transition-transform" />
+                <div key={idx} className="glass-card p-6 rounded-2xl flex flex-col group hover:border-primary/30">
+                  <item.icon className="w-6 h-6 text-primary mb-4 group-hover:scale-110 transition-transform" />
                   <h6 className="text-sm font-bold mb-2">{item.title}</h6>
                   <p className="text-xs text-muted-foreground leading-relaxed">{item.desc}</p>
                 </div>
               ))}
 
-              <div className="mt-8 p-8 glass-card rounded-2xl border-primary/20 bg-gradient-to-br from-primary/10 to-transparent">
+              <div className="mt-8 p-8 glass-card rounded-[2.5rem] border-primary/20 bg-primary/5">
                 <h5 className="text-[10px] font-bold text-primary uppercase tracking-[0.3em] mb-4">Especialidad: Branding</h5>
                 <p className="text-sm text-foreground italic leading-relaxed">
                   "Diseño identidades visuales estratégicamente rentables. Mi enfoque une el Storytelling Ejecutivo con la Arquitectura Digital para mercados premium."

@@ -76,14 +76,14 @@ const projects = [
       { 
         label: "REUNIONES ESTRATÉGICAS", 
         value: "50+", 
-        desc: "Discovery, análisis de necesidades y definición de soluciones digitales", 
+        desc: "Discovery y análisis", 
         icon: Users2,
         justificacion: "Participé y lideré más de 50 sesiones estratégicas con clientes, equipos de desarrollo y áreas internas para comprender necesidades de negocio, levantar requerimientos y definir soluciones digitales. Estas reuniones permitieron traducir objetivos comerciales en productos digitales funcionales, facilitando la toma de decisiones sobre arquitectura web, experiencia de usuario y alcance técnico de los proyectos."
       },
       { 
         label: "OPTIMIZACIÓN DIGITAL", 
         value: "+40%", 
-        desc: "Mejoras en UX, SEO, arquitectura web y soporte técnico a desarrollo", 
+        desc: "Mejoras en UX y SEO", 
         icon: Activity,
         justificacion: "A través de análisis continuo, investigación de tendencias y optimización de procesos digitales, impulsé mejoras significativas en la calidad de las soluciones web. Esto incluyó la optimización de arquitectura de información, buenas prácticas de SEO, apoyo técnico al equipo de desarrollo para mejorar implementaciones y ajustes en experiencia de usuario. Estas acciones contribuyeron a incrementar la eficiencia del desarrollo y la calidad del producto digital final."
       },
@@ -93,10 +93,10 @@ const projects = [
   {
     id: "kaput",
     title: "Kaput",
-    role: "Digital Lead | Liderazgo estratégico en el desarrollo y posicionamiento digital de la agencia",
+    role: "Digital Lead | Liderazgo estratégico",
     image: PlaceHolderImages.find(img => img.id === 'kaput-project'),
-    marcasAliadas: ["Color Mocca Marroquineria", "Autonal", "Paladar Grill", "tia resentilia"],
-    resumenEjecutivo: "Liderazgo en la estructuración y desarrollo de la presencia digital de Kaput, integrando estrategia de marca, marketing digital y posicionamiento online.",
+    marcasAliadas: ["Color Mocca", "Autonal", "Paladar Grill", "tia resentilia"],
+    resumenEjecutivo: "Liderazgo en la estructuración y desarrollo de la presencia digital de Kaput, integrando estrategia de marca, marketing digital y posicionamiento online para mercados premium.",
     desafioEstrategico: "Construir una presencia digital estratégica que permitiera a Kaput conectar con audiencias ejecutivas y posicionarse como una agencia confiable en el mercado corporativo.",
     impacto: [
       { 
@@ -127,11 +127,11 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-20 md:py-24">
+    <section id="projects" className="py-20 md:py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-20 gap-6">
           <div className="max-w-2xl">
-            <h2 className="font-headline text-accent text-sm font-bold uppercase tracking-[0.3em] mb-4">Selección de Proyectos</h2>
+            <h2 className="font-headline text-primary text-sm font-bold uppercase tracking-[0.3em] mb-4">Selección de Proyectos</h2>
             <h3 className="font-headline text-3xl md:text-5xl font-bold leading-tight tracking-tight">Casos de Estudio Estratégicos</h3>
           </div>
           <div className="text-muted-foreground text-sm max-w-sm italic border-l border-primary/30 pl-4">
@@ -145,8 +145,8 @@ export function Projects() {
               {/* Visual Side */}
               <div className="w-full lg:w-1/2 md:sticky md:top-24">
                 <div className="relative group">
-                  <div className="absolute inset-0 bg-primary/20 rounded-[2rem] blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                  <div className="relative rounded-[2rem] overflow-hidden aspect-[4/3] border border-white/5 shadow-2xl bg-card">
+                  <div className="absolute inset-0 bg-primary/20 rounded-[2.5rem] blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                  <div className="relative rounded-[2.5rem] overflow-hidden aspect-[4/3] border border-border shadow-2xl bg-card">
                     <Image 
                       src={project.image?.imageUrl || ''} 
                       alt={project.title}
@@ -157,12 +157,12 @@ export function Projects() {
                   </div>
                 </div>
 
-                {/* Trust Bar - Allied Logos with Flex Wrap */}
-                <div className="mt-6 md:mt-8 px-4 md:px-6 py-4 glass-card rounded-2xl border-white/5 flex flex-wrap items-center justify-center gap-6 md:gap-12 animate-in fade-in duration-700">
+                {/* Trust Bar - Allied Logos */}
+                <div className="mt-6 md:mt-8 px-4 md:px-6 py-4 glass-card rounded-2xl flex flex-wrap items-center justify-center gap-6 md:gap-12">
                   {project.marcasAliadas?.map((marca) => (
                     <span 
                       key={marca} 
-                      className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/40 hover:text-accent transition-all cursor-default grayscale hover:grayscale-0 hover:opacity-100 hover:scale-110"
+                      className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/50 hover:text-primary transition-all cursor-default grayscale hover:grayscale-0 dark:invert-0"
                     >
                       {marca}
                     </span>
@@ -181,8 +181,8 @@ export function Projects() {
                     ))}
                   </div>
                   <h4 className="text-2xl md:text-4xl font-bold mb-3 tracking-tight">{project.title}</h4>
-                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-accent/10 border border-accent/20">
-                    <p className="text-accent font-bold text-[9px] md:text-[10px] uppercase tracking-widest leading-none">Mi Rol: {project.role}</p>
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-secondary border border-border">
+                    <p className="text-muted-foreground font-bold text-[9px] md:text-[10px] uppercase tracking-widest leading-none">Mi Rol: {project.role}</p>
                   </div>
                 </div>
                 
@@ -200,14 +200,13 @@ export function Projects() {
                   <div className="pt-4 md:pt-6 space-y-4">
                     <span className="text-[9px] md:text-[10px] font-bold text-primary uppercase tracking-[0.2em] block">Impacto</span>
                     
-                    {/* Impact Cards: Stacked on mobile, 3 columns on desktop */}
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                       {project.impacto.map((item, i) => (
                         <Dialog key={i}>
                           <DialogTrigger asChild>
-                            <button className="glass-card p-4 rounded-2xl border-white/5 bg-secondary/10 flex flex-col gap-2 hover:border-primary/20 transition-all text-left group cursor-pointer hover:bg-secondary/20 active:scale-[0.98]">
+                            <button className="glass-card p-4 rounded-2xl flex flex-col gap-2 hover:border-primary/50 transition-all text-left group cursor-pointer hover:bg-card active:scale-[0.98]">
                               <div className="flex items-center justify-between">
-                                <item.icon className="w-4 h-4 text-accent group-hover:scale-110 transition-transform" />
+                                <item.icon className="w-4 h-4 text-primary group-hover:scale-110 transition-transform" />
                                 <span className="text-xl md:text-2xl font-black text-primary tracking-tighter">{item.value}</span>
                               </div>
                               <div>
@@ -218,15 +217,15 @@ export function Projects() {
                               </div>
                             </button>
                           </DialogTrigger>
-                          <DialogContent className="glass-card border-primary/20 bg-background/95 backdrop-blur-2xl sm:max-w-[500px] rounded-[2rem] p-6 md:p-8 max-h-[90vh] overflow-y-auto">
+                          <DialogContent className="bg-card/95 backdrop-blur-2xl sm:max-w-[500px] rounded-[2.5rem] p-6 md:p-8 max-h-[90vh] overflow-y-auto border-border shadow-2xl">
                             <DialogHeader>
                               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
                                 <ShieldCheck className="w-6 h-6" />
                               </div>
-                              <DialogTitle className="text-xl md:text-2xl font-bold text-gradient mb-2">Justificación Técnica</DialogTitle>
+                              <DialogTitle className="text-xl md:text-2xl font-bold text-foreground mb-2">Justificación Técnica</DialogTitle>
                             </DialogHeader>
                             <div className="space-y-6">
-                              <p className="text-foreground leading-relaxed italic text-base md:text-lg border-l-2 border-accent pl-4">
+                              <p className="text-foreground leading-relaxed italic text-base md:text-lg border-l-4 border-primary pl-4">
                                 {item.justificacion}
                               </p>
                             </div>
