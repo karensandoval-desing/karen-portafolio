@@ -28,12 +28,11 @@ const experiences = [
   },
   {
     company: "Playconomy",
-    role: "Product Strategist & UX Architect",
+    role: "Product Strategy, UX & Visual Design",
     period: "Fase Lanzamiento",
     highlights: [
-      "Estructuración de modelo de negocio digital que integra e-commerce y gamificación financiera.",
-      "Diseño de arquitectura funcional para 4 actores: Cliente final, Corporativo, Admin y Backoffice.",
-      "Sistema de componentes escalable definido para crecimiento masivo."
+      "Diseño y estructuración integral del producto digital, incluyendo la creación de la identidad visual, sistema de iconografía, arquitectura de información y experiencia de usuario.",
+      "Definición de la navegación, flujos y estructura funcional de la plataforma para tres actores principales: niños (compra y venta dentro de la plataforma), padres (control parental y supervisión de transacciones) y administrador (gestión operativa del sistema), alineando la experiencia con un modelo de negocio basado en e-commerce y gamificación financiera."
     ],
     icon: Rocket
   },
