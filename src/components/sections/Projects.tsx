@@ -105,21 +105,21 @@ const projects = [
         value: "70%", 
         desc: "Segmento C-Level", 
         icon: Target,
-        justificacion: "Diseñamos un embudo de conversión 'High-Ticket' donde cada punto de contacto visual fue curado para transmitir el rigor ejecutivo necesario para cerrar contratos B2B."
+        justificacion: "Las estrategias de posicionamiento y comunicación digital de Kaput fueron diseñadas específicamente para conectar con ejecutivos y tomadores de decisión entre los 35 y 55 años. A través del desarrollo del sitio web, narrativa de marca, contenidos estratégicos y enfoque en autoridad digital, se estructuró una propuesta de valor orientada al mercado corporativo. Esto permitió que aproximadamente el 70% del enfoque estratégico de la marca estuviera alineado con audiencias C-Level, priorizando mensajes, servicios y experiencias digitales que respondieran a las necesidades de este perfil de cliente."
       },
       { 
         label: "Control Brand Equity", 
         value: "100%", 
         desc: "Presencia Omnicanal", 
         icon: ShieldCheck,
-        justificacion: "Validamos la consistencia de marca mediante el análisis de tasa de respuesta y calidad de leads, asegurando que el storytelling fuera coherente en todas las plataformas."
+        justificacion: "Se consolidó una presencia digital coherente y alineada en todos los puntos de contacto de la marca, incluyendo sitio web, redes sociales y piezas de comunicación digital. A través de lineamientos claros de branding, narrativa visual y consistencia en contenidos, se logró mantener control total sobre la percepción y comunicación de la marca en cada canal digital. Esto permitió fortalecer el reconocimiento de Kaput y garantizar una experiencia de marca consistente para clientes potenciales y audiencias estratégicas."
       },
       { 
         label: "Estrategia Omnicanal", 
         value: "360°", 
         desc: "Influencer Growth", 
         icon: Layers,
-        justificacion: "Orquestamos estrategias de crecimiento que integraron marketing de influencia con ecosistemas digitales propios, optimizando el retorno de inversión de la agencia."
+        justificacion: "La estrategia digital de Kaput se desarrolló bajo un enfoque 360°, integrando branding, marketing digital, creación de contenido e iniciativas de crecimiento para creadores e influencers. Esta visión permitió construir un ecosistema digital donde cada canal cumplía un rol dentro de la estrategia general: posicionamiento de marca, generación de visibilidad y desarrollo de oportunidades de colaboración entre marcas e influencers."
       },
     ],
     tags: ["Business Model", "Conversion", "Growth"]
