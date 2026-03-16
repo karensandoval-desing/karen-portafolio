@@ -3,7 +3,6 @@ import { StrategicProfile } from "@/components/sections/StrategicProfile";
 import { Capabilities } from "@/components/sections/Capabilities";
 import { Projects } from "@/components/sections/Projects";
 import { Experience } from "@/components/sections/Experience";
-import { ProfessionalEvolution } from "@/components/sections/ProfessionalEvolution";
 import { Contact } from "@/components/sections/Contact";
 
 export default function Home() {
@@ -14,7 +13,6 @@ export default function Home() {
       <Capabilities />
       <Projects />
       <Experience />
-      <ProfessionalEvolution />
       <Contact />
     </main>
   );
