@@ -18,7 +18,7 @@ export function Hero() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
               <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-accent"></span>
             </span>
-            Estrategia de Producto & Diseño Visual
+            Estrategia Digital · UX · Ecosistemas Web
           </div>
           
           <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-8 leading-[0.95] animate-in fade-in slide-in-from-bottom-6 duration-700">
