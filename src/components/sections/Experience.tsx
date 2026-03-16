@@ -52,13 +52,13 @@ const experiences = [
 
 const achievements = [
   {
-    title: "Mega Incentivos & Reconocimientos",
-    desc: "Premios por la administración eficiente y creativa de ecosistemas digitales complejos en Aviatur.",
+    title: "Incentivos & Reconocimientos",
+    desc: "Distinciones internas, incentivos monetarios y ascensos obtenidos como reconocimiento al desempeño profesional y al impacto generado en la gestión de iniciativas digitales.",
     icon: Award
   },
   {
-    title: "QA & Infraestructura Crítica",
-    desc: "Liderazgo en upgrades de bases de datos (MySQL) y auditoría visual de entornos staging de alto tráfico.",
+    title: "QA Digital y Validación de Implementaciones",
+    desc: "Supervisión de entornos de prueba (staging), validación visual de interfaces y acompañamiento al equipo de desarrollo para asegurar consistencia entre diseño, experiencia de usuario y resultado final en producción.",
     icon: Database
   },
   {
