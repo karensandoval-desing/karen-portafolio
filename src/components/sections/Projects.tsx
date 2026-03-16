@@ -13,7 +13,10 @@ import {
   Target, 
   ShieldCheck, 
   Layers,
-  Info
+  Info,
+  Monitor,
+  Users2,
+  Activity
 } from "lucide-react";
 import {
   Dialog,
@@ -67,25 +70,25 @@ const projects = [
     desafioEstrategico: "Liderar la optimización del ecosistema web para equilibrar las propuestas visuales de los sitios con los estándares técnicos, indexación y Core Web Vitals, asegurando rendimiento, visibilidad en buscadores y consistencia en la experiencia digital.",
     impacto: [
       { 
-        label: "Landings SEO", 
-        value: "12", 
-        desc: "Optimizadas desde código", 
-        icon: Search,
-        justificacion: "Rediseñamos el DOM para priorizar la jerarquía de encabezados (H1-H3) y la carga de recursos críticos, asegurando una indexación impecable y tiempos de respuesta bajo los estándares de Core Web Vitals."
+        label: "PLATAFORMAS Y LANDINGS", 
+        value: "12+", 
+        desc: "Estrategia, UX, SEO y estructura digital", 
+        icon: Monitor,
+        justificacion: "Desarrollo y optimización de un ecosistema diverso de plataformas y landing pages, integrando estrategias avanzadas de SEO y UX para maximizar la visibilidad y conversión corporativa."
       },
       { 
-        label: "Tiempo Dev", 
-        value: "-20%", 
-        desc: "Componentes DRY", 
-        icon: Zap,
-        justificacion: "La creación de una librería de componentes en HTML5/CSS3 validados eliminó la fricción entre el equipo creativo y el desarrollo backend, acelerando el ciclo de entrega."
+        label: "REUNIONES ESTRATÉGICAS", 
+        value: "50+", 
+        desc: "Discovery, análisis de necesidades y definición de soluciones digitales", 
+        icon: Users2,
+        justificacion: "Liderazgo en sesiones de discovery y análisis técnico-estratégico con stakeholders para definir soluciones digitales alineadas con los objetivos de negocio de grandes corporativos."
       },
       { 
-        label: "Eficiencia Hand-off", 
-        value: "+45%", 
-        desc: "Diseño a Dev", 
-        icon: Workflow,
-        justificacion: "Establecimos un sistema de diseño técnico que sirvió como lenguaje común, reduciendo drásticamente las iteraciones correctivas durante la fase de implementación."
+        label: "OPTIMIZACIÓN DIGITAL", 
+        value: "+40%", 
+        desc: "Mejoras en UX, SEO, arquitectura web y soporte técnico a desarrollo", 
+        icon: Activity,
+        justificacion: "Implementación de mejoras críticas en la arquitectura web y soporte técnico continuo, resultando en un incremento significativo del rendimiento y la consistencia digital de los aliados."
       },
     ],
     tags: ["Technical SEO", "Information Architecture", "UX Strategy"]
